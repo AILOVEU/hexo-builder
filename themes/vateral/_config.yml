@@ -1,0 +1,102 @@
+
+# html lang
+language: cn
+
+# seo优化
+seo:
+ keywords: "电影 音乐"
+ description: "听听歌，聊会音乐，品品生活"
+
+# Miscelaneous
+favicon: favicon.ico
+
+# head-bg 头像背景图 
+headbg: https://s2.ax1x.com/2019/12/20/QOef9e.jpg
+# header 头像图 
+header: https://s2.ax1x.com/2019/12/20/QOeqN8.jpg
+
+# post-header 标语部分
+post_header:
+  img: https://s2.ax1x.com/2019/12/20/QX67iq.jpg
+  about:
+    - "你好 欢迎来到本站"
+  url: "http://ailoveu.github.io"
+  visitor_front: "你是第"
+  visitor_back: "位访客"
+
+# 主配色
+blendent:
+  main: "#26A69A"
+
+#访客
+visitor: true
+
+#博客时间统计
+time: true
+#博客开启的时间 格式为：月/日/年 几点:几分:几秒
+begin_time: 12/18/2019 00:00:00
+
+baidu_tongji: true
+
+#链接
+sns:
+    github: "https://github.com/AILOVEU"
+    weibo: "https://weibo.com/u/5306271796"
+    zhihu: "https://www.zhihu.com/people/AILOVEUU/activities"
+    twitter: "http://example.com"
+    email: "ailoveuhy@gmail.com"
+
+#默认thumbnail图片的数目
+thumbnail: 19
+
+#nav
+sidebar:
+    homepage:
+        use: true
+    archives:
+        use: true
+    categories:
+        use: true
+    tags:
+        use: true
+    friends:
+        use: false
+    about:
+        use: true
+    photo:
+        use: true
+
+# Reading experience
+reading:
+    entry_excerpt: 180
+
+#photo page
+movie:
+    name: "我心目中的十佳电影(2019.12.19)"
+    about: "一段简介"
+
+music:
+  name: "我心目中的最美歌曲(2019.12.19)"
+  about: "一段简介"
+#评论
+comment:
+    use: true
+    shortname: ailoveu.disqus.com
+    count: true
+
+# stylesheets loaded in the <head>
+stylesheets:
+  - /css/materialize.min.css
+  - /css/main.min.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/jquery-3.1.1.min.js
+  - /js/materialize.min.js
+  - /js/main.min.js
+
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: 

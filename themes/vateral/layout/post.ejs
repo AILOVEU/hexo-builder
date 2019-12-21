@@ -1,0 +1,97 @@
+
+
+<article id="post">
+  <div class="post-page-title" <% if(!page.thumbnail) { %><%var a=parseInt(Math.random()*theme.thumbnail,10)+1%> style="background-color:<%= theme.blendent.main %>;background-image:url(/images/random/vateral-<%=a%>.png)" <% } else { %>style="background-color:<%= theme.blendent.main %>;background-image:url(<%= page.thumbnail%>)" <% } %>>
+  <h2><%=page.title%></h2>
+    <% if (page.date) { %>
+  <p>作者:<%=config.author%> &nbsp&nbsp 发布于:<time datetime="<%=page.date.toJSON()%>">
+          <%=date(page.date)%>
+    </time>
+  </p>
+    <% } %>
+  </div>
+
+  <div class="post-page-content">
+  <%-page.content%>
+  </div>
+
+  
+  <!--评论块-->
+    <!-- <% if(theme.comment.use){%>
+  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="<%=theme.comment.shortname%>"><button style="margin: 0 auto;background-color:<%= theme.blendent.main %> " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
+
+  <script>
+      function disqus() {
+          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
+          v.id = 'dsq-count-scr'
+          v.src= '//'+disquUrl+'/count.js';
+          s.src = 'https://'+disquUrl+'/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(v);
+          (d.head || d.body).appendChild(s);
+      }
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <%}%> -->
+
+    <!-- id 将作为查询条件 -->
+<div id="readNum">
+
+
+</div>
+<script>
+  var obj = document.getElementById("readNum");
+  obj.innerHTML = "<span id='"+window.location.pathname+"' class='leancloud_visitors' data-flag-title='<%=page.title %>'>  <em class='post-meta-item-text'>阅读量 </em>  <i class='leancloud-visitors-count'>1</i>";
+</script>
+
+</span>
+</article>
+
+
+
+<nav class="post-nav">
+  <!-- Prev Nav -->
+    <% if (page.prev) { %>
+  <a href="<%- config.root %><%- page.prev.path %>" id="post_nav-newer" class="post-nav-content prev-content">
+      上一篇
+  </a>
+    <% } %>
+
+
+  <!-- Next Nav -->
+    <% if (page.next) { %>
+  <a href="<%- config.root %><%- page.next.path %>" id="post_nav-older" class="post-nav-content next-content">
+      下一篇
+  </a>
+    <% } %>
+</nav>
+
+<div id="vcomments" style="width:70%;margin:40px auto 0;padding:30px;border:1px solid #999999;background: white;"></div>
+    
+<div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
+<div class="post-toc-none"><p>(无)</p></div>
+<div class="post-toc-box">
+    <%- toc(page.content, {
+      class: 'post-toc',
+      list_number: true
+    }) %>
+</div>
+<!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
+    <script>
+      new Valine({
+          el: '#vcomments',
+          appId: '6EAKMFXHkl9DUQpOKtVtJMwJ-gzGzoHsz',
+          appKey: 'fTeVCApFb2zauCWeBcDhyxdy',
+          notify:false, 
+          verify:false, 
+          avatar:'monsterid', 
+          meta:['nick'],
+          visitor:true,
+          recordIP:true,
+          placeholder: '无需注册就能评论了，还不快来吐槽' 
+      })
+  </script>
+<script type="text/javascript">
+
+    menu();
+</script>
