@@ -1,4 +1,9 @@
 
+title: AILOVEU的个人博客
+subtitle: 分享
+description: 
+keywords: 个人博客,心情,电影,分享
+author: Hy
 # html lang
 language: cn
 
@@ -97,6 +102,7 @@ scripts:
 
 highlight:
   enable: true
-  line_number: false
-  auto_detect: false
-  tab_replace: 
+  line_number: true
+  auto_detect: true
+  tab_replace: '    '
+

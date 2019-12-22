@@ -47,9 +47,9 @@
             <div class="portfolio-page">
                 <% if (site.data.photo) { %>
                     <% for (var i in site.data.photo) { %>
-                        <div class="portfolio-group photo-box" style="background-image: url(<%= site.data.photo[i].very_small_link %>);">
-                            <a class="portfolio-item placeholder" id="href"  href="<%= site.data.photo[i].large_link %>" >
-                                <img  class="img-small" src="<%= site.data.photo[i].small_link %>" alt="<%= site.data.photo[i].alt %>">
+                        <div class="portfolio-group photo-box" style="background-image: url(<%= site.data.photo[i].link %>);">
+                            <a class="portfolio-item placeholder" id="href"  href="<%= site.data.photo[i].link %>" >
+                                <img  class="img-small" src="<%= site.data.photo[i].link %>" alt="<%= site.data.photo[i].alt %>">
                                 <div class="detail photo-box"  >
                                     <h3><%= i %></h3>
                                     <p class="Model" style=" padding-top: 0;padding-bottom: 0;">导演：<%= site.data.photo[i].director  %></p>
@@ -68,7 +68,7 @@
     </div>
 
     <nav class="main-nav" style="background-color: white;border-bottom: #DDDDDD 1px solid;box-shadow: none;height: 104px">
-        <div id="logo" class="left" style="color: #707070">歌剧魅影</div>
+        <div id="logo" class="left" style="color: #707070">不老歌曲</div>
     </nav>
     <div class="content-container">
         <header>
@@ -79,9 +79,9 @@
             <div class="portfolio-page">
                 <% if (site.data.music) { %>
                     <% for (var i in site.data.music) { %>
-                        <div class="portfolio-group photo-box" style="background-image: url(<%= site.data.music[i].very_small_link %>);">
-                            <a class="portfolio-item placeholder" id="href"  href="<%= site.data.music[i].large_link %>" >
-                                <img  class="img-small" src="<%= site.data.music[i].small_link %>" alt="<%= site.data.music[i].alt %>">
+                        <div class="portfolio-group photo-box" style="background-image: url(<%= site.data.music[i].link %>);">
+                            <a class="portfolio-item placeholder" id="href"  href="<%= site.data.music[i].link %>" >
+                                <img  class="img-small" src="<%= site.data.music[i].link %>" alt="<%= site.data.music[i].alt %>">
                                 <div class="detail photo-box"  >
                                     <h3><%= i %></h3>
                                     <p class="Model" style=" padding-top: 0;padding-bottom: 0;">歌手：<%= site.data.music[i].director  %></p>

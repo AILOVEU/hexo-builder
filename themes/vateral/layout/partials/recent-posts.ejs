@@ -1,4 +1,5 @@
 <div id="recent-posts">
+  <!-- 首先显示顶置内容 -->
     <% page.posts.each(function(post) { %>
     <% if (post.up) { %>
   <div class="recent-post-item lazy" style="min-height: 150px;background-color:<%= theme.blendent.main %>" <% if(!post.thumbnail) { %><%var a=parseInt(Math.random()*theme.thumbnail,10)+1%> data-original="/images/random/vateral-<%=a%>.png"  <% } else { %>  data-original="<%= post.thumbnail%>"  <% } %>>
