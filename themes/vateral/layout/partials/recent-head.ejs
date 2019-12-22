@@ -1,8 +1,11 @@
 <!--首页的头部-->
-<div class="post-header" style="background-image:url(<%= theme.post_header.img %>);background-color:<%= theme.blendent.main %> ">
+
+
+<div class="post-header" style="background-image:url(<%= theme.post_header.img %>) ;background-color:<%= theme.blendent.main %> ;height:450px;">
+
     <a  href="<%=theme.post_header.url%>"  >
-        <div class="post-header-title">
-            <p style="color:white;font-size:40px;">
+        <div class="post-header-title"  style="margin-top:140px;">
+            <p style="color:white;font-size:40px;height:160px;line-height: 100px;">
                 <% if(theme.post_header.about) { %>
                 <% if(Array.isArray(theme.post_header.about)) { %>
                 <%- theme.post_header.about.join('</p><p>') %>
@@ -23,6 +26,7 @@
 <div class="post-author">
     <div class="post-author-img"><img src="<%=theme.header%>" ondragstart="return false;"></div>
     <p class="post-author-name"><%=config.author%></p>
+    
     <div class="post-author-button"  target="_self"><i class="material-icons"  target="_self" style="font-size: 20px">share</i></div>
     <div class="post-author-link"><ul>
             <p>分享到：</p>

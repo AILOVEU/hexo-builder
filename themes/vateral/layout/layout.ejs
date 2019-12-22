@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="<%=config.language%>">
 <head>
-  <!--加载valine评论模块-->
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <!--加载不蒜子统计模块-->
-  <% if(theme.visitor) { %>
-    <script async src="/js/busuanzi.pure.mini.js"></script>
-    <% } %>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <!--seo相关-->
@@ -24,13 +17,7 @@
       <link rel="stylesheet" href="<%=url%>">
     <% }); %>
   <% } %>
-<!--加载脚本-->
-<% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
-  <!-- scripts list from theme config.yml -->
-  <% theme.scripts.forEach(function(url) { %>
-  <script src="<%=url%>"></script>
-  <% }); %>
-  <% } %>
+
   
   <style type="text/css">
       html{
@@ -79,6 +66,21 @@
 <% }%> -->
 
 
+</body>
+<!--加载脚本-->
+<% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
+  <!-- scripts list from theme config.yml -->
+  <% theme.scripts.forEach(function(url) { %>
+  <script src="<%=url%>"></script>
+  <% }); %>
+  <% } %>
+    <!--加载valine评论模块-->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <!--加载不蒜子统计模块-->
+    <% if(theme.visitor) { %>
+      <script async src="/js/busuanzi.pure.mini.js"></script>
+      <% } %>
+  
 <script>
     NProgress.start();
     NProgress.done();
@@ -86,7 +88,7 @@
     links();
     window.onpopstate = menu();
     //pjax操作
-    $(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
+    //$(document).pjax('a:not(.nopjax)', '#content-inner', {fragment:'#content-inner', timeout:8000});
     $(document).on('pjax:start', NProgress.start).on('pjax:end', NProgress.done)
         .on('pjax:end', () => {
             dowmdiv();
@@ -97,5 +99,4 @@
         });
 </script>
 
-</body>
 </html>
