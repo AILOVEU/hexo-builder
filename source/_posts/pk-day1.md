@@ -12,6 +12,8 @@ thumbnail: https://s2.ax1x.com/2019/12/22/QxOfqe.md.jpg
 
 <audio controls="controls"  playsinline webkit-playsinline loop  autoplay="autoplay"><br><source src="/pianke/day1.mp3" type="audio/mpeg"><br></audio></p><span id="menu_index_1" name="menu_index_1">
 
+  <div align="center">
+
 ![QxOzIs.jpg](https://s2.ax1x.com/2019/12/22/QxOzIs.jpg)
 
 >很遗憾片刻404了，如果有相似的软件欢迎小伙伴安利。再次感谢片刻陪伴的一个一个夜晚。
