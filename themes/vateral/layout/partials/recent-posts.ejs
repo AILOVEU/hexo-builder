@@ -15,17 +15,19 @@
     <% }); %>
   <% page.posts.each(function(post) { %>
     <% if (!post.up) { %>
-      <div class="recent-post-item lazy"style="background-color:<%= theme.blendent.main %>" <% if(!post.thumbnail) { %><%var a=parseInt(Math.random()*theme.thumbnail,10)+1%> data-original="/images/random/vateral-<%=a%>.png"  <% } else { %>  data-original="<%= post.thumbnail%>"  <% } %>>
+      <div class="recent-post-item lazy" <% if(!post.thumbnail) { %><%var a=parseInt(Math.random()*theme.thumbnail,10)+1%> data-original="/images/random/vateral-<%=a%>.png"  <% } else { %>  data-original="<%= post.thumbnail%>"  <% } %>>
+       
         <a class="recent-post-link" href="<%=config.root + post.path%>">
-        <div class="post-hover">
+        <div class="post-hover" style="background-color:rgba(	80,80,80,0.4);z-index:-1;font-family:'楷体';">
           <!--title-->
-          <p class="post-title"><a href="<%=config.root + post.path%>" ><%=post.title%></a></p>
+          <p class="post-title" style="font-family:'楷体';"><a href="<%=config.root + post.path%>"  ><%=post.title%></a></p>
 
           <!--date-->
           <% if (post.date) { %>
-            <p class="post-time"><%=config.author%> &nbsp &nbsp 发布于:<time datetime="<%=post.date.toJSON()%>">
-              <%=date(post.date)%>
-            </time>
+            <p class="post-time" style="font-family:'楷体';">作者: <%=config.author%> &nbsp &nbsp 发布于:
+              <time datetime="<%=post.date.toJSON()%>">
+                <%=date(post.date)%>
+              </time>
             </p>
           <% } %>
 
@@ -55,7 +57,7 @@
             <% } %>
 
           <!--excerpt-->
-          <div class="post-excerpt">
+          <div class="post-excerpt" style="font-family:'楷体';font-size:18px;">
             <p>
               摘要：
               <%if(post.excerpt) {%>

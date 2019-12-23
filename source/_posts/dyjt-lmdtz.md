@@ -1,5 +1,5 @@
 ---
-title: 【电影截图】浪漫的体质
+title: <电影截图> 浪漫的体质
 categories:
 - 电影截图
 tags: 
@@ -10,8 +10,14 @@ date: 2019/12/22 12:16:00
 thumbnail: https://s2.ax1x.com/2019/12/22/QxR2Gj.md.jpg
 ---
 
+  <div align="center">
+
 [![Qx2QHS.md.png](https://s2.ax1x.com/2019/12/22/Qx2QHS.md.png)](https://imgchr.com/i/Qx2QHS)
 
+  <div align="center">
+
 [![Qx23NQ.md.png](https://s2.ax1x.com/2019/12/22/Qx23NQ.md.png)](https://imgchr.com/i/Qx23NQ)
+
+  <div align="center">
 
 [![Qx2vVS.md.png](https://s2.ax1x.com/2019/12/22/Qx2vVS.md.png)](https://imgchr.com/i/Qx2vVS)

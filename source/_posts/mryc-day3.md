@@ -1,5 +1,5 @@
 ---
-title: 【每日一禅】时光机
+title: <每日一禅>  时光机
 categories:
 - 每日一禅
 tags: 

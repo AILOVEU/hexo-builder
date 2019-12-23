@@ -35,6 +35,13 @@
       }
   </style>
 <link rel="shortcut icon" href="<%=theme.favicon%>">
+    <!--加载valine评论模块-->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <!--加载不蒜子统计模块-->
+    <% if(theme.visitor) { %>
+      <script async src="/js/busuanzi.pure.mini.js"></script>
+      <% } %> 
+  
 </head>
 <body>
 
@@ -74,13 +81,7 @@
   <script src="<%=url%>"></script>
   <% }); %>
   <% } %>
-    <!--加载valine评论模块-->
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <!--加载不蒜子统计模块-->
-    <% if(theme.visitor) { %>
-      <script async src="/js/busuanzi.pure.mini.js"></script>
-      <% } %>
-  
+
 <script>
     NProgress.start();
     NProgress.done();

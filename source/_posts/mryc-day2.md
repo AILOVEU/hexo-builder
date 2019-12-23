@@ -1,5 +1,5 @@
 ---
-title: 【每日一禅】做个可以向下兼容的人
+title: <每日一禅>  做个可以向下兼容的人
 categories:
 - 每日一禅
 tags: 
@@ -18,4 +18,6 @@ thumbnail: https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg
 
 >只要TA愿意，TA可以和每个跟你一样级别的人，达到这种心有灵犀。
 
-[![QxgTXV.md.jpg](https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg)](https://imgchr.com/i/QxgTXV)
+  <div align="center">
+
+[![QxgTXV.md.jpg](https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg )](https://imgchr.com/i/QxgTXV)

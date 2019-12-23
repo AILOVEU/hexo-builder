@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: 你好 欢迎来到本站
 tags: 
 - Other
 up: true

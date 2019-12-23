@@ -22,9 +22,9 @@ header: https://s2.ax1x.com/2019/12/20/QOeqN8.jpg
 
 # post-header 标语部分
 post_header:
-  img: https://s2.ax1x.com/2019/12/22/Qztbss.md.jpg
+  img: https://s2.ax1x.com/2019/12/23/lph96H.jpg
   about:
-    - "你好 欢迎来到本站"
+    - ""
   url: "http://ailoveu.github.io"
   visitor_front: "你是第"
   visitor_back: "位访客"
@@ -34,7 +34,7 @@ blendent:
   main: "#26A69A"
 
 #访客
-visitor: true
+visitor: false
 
 #博客时间统计
 time: true
