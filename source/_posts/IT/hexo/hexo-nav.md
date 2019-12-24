@@ -1,5 +1,5 @@
 ---
-title: <hexo>  hexo建站
+title: <hexo>  hexo建站导航页
 categories:
 - IT
 tags: 
