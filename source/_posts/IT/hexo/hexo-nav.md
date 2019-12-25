@@ -1,5 +1,5 @@
 ---
-title: <hexo>  hexo建站导航页
+title: <hexo>  hexo建站教程导航页
 categories:
 - IT
 tags: 
@@ -19,7 +19,7 @@ thumbnail: https://s2.ax1x.com/2019/12/24/l9ObLV.md.jpg
 
 1. [创建github账号和项目](../1.1)
 
-2. [下载github desktop并拉取项目](../1.2)
+2. [使用github desktop开发项目](../1.2)
 
 3. 【进阶】配置github的ssh密钥
 
