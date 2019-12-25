@@ -17,9 +17,9 @@ thumbnail: https://s2.ax1x.com/2019/12/24/l9ObLV.md.jpg
 ##### 一、github相关
 ---
 
-1. [创建github账号、项目](../1.1)
+1. [创建github账号和项目](../1.1)
 
-2. 下载github desktop，拉取项目
+2. [下载github desktop并拉取项目](../1.2)
 
 3. 【进阶】配置github的ssh密钥
 
