@@ -21,7 +21,7 @@ thumbnail: https://s2.ax1x.com/2019/12/24/l9ObLV.md.jpg
 
 2. [使用github desktop开发项目](../1.2)
 
-3. 【进阶】配置github的ssh密钥
+3. [【进阶】配置github的ssh密钥](../1.3)
 
 ##### 二、hexo相关
 ---
