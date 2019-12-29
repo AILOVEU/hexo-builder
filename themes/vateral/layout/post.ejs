@@ -10,7 +10,10 @@
   </p>
     <% } %>
   </div>
+  <div id="readNum" style="font-size:16px;" align="right">
 
+
+  </div>
   <div class="post-page-content">
   <%-page.content%>
   </div>
@@ -35,10 +38,13 @@
     <%}%> -->
 
     <!-- id 将作为查询条件 -->
-<div id="readNum">
 
+<div align="center" style="margin-top:200px;">
+  <img  src="/images/end.png" alt="image">
+  <div>部分素材来自网络，版权归原作者，如有侵权请联系删除</div>
 
 </div>
+
 <script>
   var obj = document.getElementById("readNum");
   obj.innerHTML = "<span id='"+window.location.pathname+"' class='leancloud_visitors' data-flag-title='<%=page.title %>'>  <em class='post-meta-item-text'>阅读量 </em>  <i class='leancloud-visitors-count'>1</i>";
