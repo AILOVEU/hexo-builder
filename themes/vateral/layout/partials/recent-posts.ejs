@@ -13,51 +13,28 @@
   </div>
     <% } %>
     <% }); %>
+    <div style="width:600px;">
   <% page.posts.each(function(post) { %>
     <% if (!post.up) { %>
       <div class="recent-post-item lazy" <% if(!post.thumbnail) { %><%var a=parseInt(Math.random()*theme.thumbnail,10)+1%> data-original="/images/random/vateral-<%=a%>.png"  <% } else { %>  data-original="<%= post.thumbnail%>"  <% } %>>
 
         <a class="recent-post-link" href="<%=config.root + post.path%>">
-          <div class="post-hover" style="background-color:rgba(	80,80,80,0);z-index:-1;font-family:'楷体';height:100px">
+          <div class="post-hover" style="background-color:rgba(	80,80,80,0.2);z-index:-1;font-family:'楷体';height:100px;text-align: center;padding-top:50px;">
             <!--title-->
-            <p class="post-title" style="font-family:'楷体';"><a  style="background-color:rgba(	80,80,80,0.4);" href="<%=config.root + post.path%>"  ><%=post.title%></a></p>
+            <p class="post-title" style="font-family:'楷体';font-size:1.5625rem;"><a  style="background-color:rgba(	80,80,80,0.4);text-align: center;" href="<%=config.root + post.path%>"  ><%=post.title%></a></p>
   
             <!--date-->
             <% if (post.date) { %>
-              <p class="post-time" style="font-family:'楷体';">作者: <%=config.author%> &nbsp &nbsp 发布于:
+              <p class="post-time" style="font-family:'楷体';font-size:.875rem;text-align: center;" >作者: <%=config.author%> &nbsp &nbsp 发布于:
                 <time datetime="<%=post.date.toJSON()%>">
                   <%=date(post.date)%>
                 </time>
               </p>
             <% } %>
-  
-            <!--tags-->
-  
-            标签:
-              <% if (post.tags.length>0) { %>
-                <%- list_tags(post.tags, {
-                  show_count: false,
-                  style: 'list',
-                  separator: ''
-                }) %>
-              <% }else{ %>
-                暂无标签
-              <% } %>
-            <!--分类-->
-  
-            分类:
-              <% if (post.categories.length>0) { %>
-                  <%- list_categories(post.categories, {
-                    show_count: false,
-                    style: 'list',
-                    separator: ''
-                  }) %>
-              <% }else {%>
-                  暂无分类
-              <% } %>
+
   
             <!--excerpt-->
-            <div class="post-excerpt" style="font-family:'楷体';font-size:18px;">
+            <div class="post-excerpt" style="font-family:'楷体';font-size:1.075rem;text-align: center;">
               <p>
                 摘要：
                 <%if(post.excerpt) {%>
@@ -73,14 +50,12 @@
          
           </div>
           </a>
-
-
-
-       <div class="post-more"><a href="<%=config.root + post.path%>" >全文阅读</a></div>
       
       </div>
     <%}%>
+
   <% }); %>
+</div>
   <%-partial('partials/pagination')%>
 </div>
 
