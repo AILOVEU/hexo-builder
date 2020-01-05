@@ -8,7 +8,13 @@
   <meta name="keywords" content="<%=theme.seo.keywords%>">
   <meta name="description" content="<%=theme.seo.description%>">
   <% }%>
-
+  <link type="text/css" rel="stylesheet" media="screen" href="http://oss.rainman.me/rainman.me/js/sakura/jquery-sakura.css" />
+  <script>
+    if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))
+    {}
+    else
+    {  document.write('<script src="http://oss.rainman.me/rainman.me/js/sakura/jquery-sakura.js"><\/script><script type="text/javascript">$(function(){$("body").sakura()});$(window).load(function(){$("body").sakura()});<\/script>');}
+    </script>
   <title><%=config.title%></title>
   <!--加载所有css模块-->
   <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
@@ -87,7 +93,39 @@
   <script src="<%=url%>"></script>
   <% }); %>
   <% } %>
-
+  <script>
+    function color16(){//十六进制颜色随机
+			var r = Math.floor(Math.random()*256);
+			var g = Math.floor(Math.random()*256);
+			var b = Math.floor(Math.random()*256);
+			var color = '#'+r.toString(16)+g.toString(16)+b.toString(16);
+			return color;
+		}
+    $("html,body").click(function(e) {
+      var gcd = new Array("❤", "^_^", "自由", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+      var n = Math.floor(Math.random() * gcd.length);
+      var $i = $("<b/>").text(gcd[n]);
+      var x = e.pageX,
+      y = e.pageY;
+      $i.css({
+        "z-index": 99999,
+        "top": y - 20,
+        "left": x,
+        "position": "absolute",
+        "color": color16()
+      });
+      $("body").append($i);
+      $i.animate({
+        "top": y - 180,
+        "opacity": 0
+      },
+      1500,
+      function() {
+        $i.remove()
+      });
+      e.stopPropagation()
+    });
+  </script>
 <script>
     dowmdiv();
     NProgress.start();

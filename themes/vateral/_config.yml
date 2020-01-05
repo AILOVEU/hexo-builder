@@ -95,6 +95,7 @@ comment:
 stylesheets:
   - /css/materialize.min.css
   - /css/main.min.css
+  - /css/mycss.css
 
 # scripts loaded in the end of the body
 scripts:
