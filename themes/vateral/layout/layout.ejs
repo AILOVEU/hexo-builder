@@ -23,12 +23,20 @@
       <link rel="stylesheet" href="<%=url%>">
     <% }); %>
   <% } %>
-
+  
   
   <style type="text/css">
+  body{
+    padding:0;
+		margin:0;
+		flex-direction: column!important;
+		height: 100%;
+		display: flex!important;
+}
       html{
           font-family: sans-serif;
           font-weight: 300;
+          height: 100%;
       }
       @font-face {
           font-family: 'Material Icons';
@@ -49,7 +57,8 @@
       <% } %> 
   
 </head>
-<body>
+<body style="padding:0;margin:0;flex-direction: column!important;height: 100%;display: flex!important;">
+  <%- body %>
   <center>
     <span id="jinrishici-sentence">正在加载今日诗词....</span>
     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -63,19 +72,19 @@
   </div>
 </div>
 <!--内容页-->
-<div id="content-outer">
-  <div id="content-inner">
+
     <!-- body调index.ejs -->
-    <%- body %>
+  
     
-  </div>
-</div>
+
 <!--页尾-->
-<div id="bottom-outer">
+<!-- <div id="bottom-outer">
   <div id="bottom-inner">
     <%-partial('partials/footer')%>
   </div>
-</div>
+</div> -->
+
+<%-partial('partials/footer')%>
 
 <!--影集界面需要的资源-->
 <!-- <% if(page.layout === 'photo') { %>
@@ -83,7 +92,7 @@
 <% }%> -->
 
 
-</body>
+</body >
 <!-- <script src="https://topurl.cn/chat.js"></script> -->
 
 <!--加载脚本-->

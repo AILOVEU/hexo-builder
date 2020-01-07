@@ -29,17 +29,6 @@
             <% } %>
           <!--分类-->
 
-          分类:
-            <% if (post.categories.length>0) { %>
-            <%- list_categories(post.categories, {
-              show_count: false,
-              style: 'list',
-              separator: ''
-            }) %>
-            <% }else {%>
-            暂无分类
-            <% } %>
-
           <!--excerpt-->
           <div class="post-excerpt">
             <p>

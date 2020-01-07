@@ -1,8 +1,8 @@
 <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:<%= theme.blendent.main %>"><i class="material-icons material-up">vertical_align_top</i></div></a>
-
-<% if (theme.time){%>
-<p >Copyright ©  2020  AILOVEU <%=config.title%></p>
-<p style="font-size: 10px" id="footer-times" data-time="<%=theme.begin_time%>"></p>
+<footer class="myfooter">
+    <p style="line-height: 25px">Copyright © 2020 AILOVEU <%=config.title%>
+    <p style="font-size: 10px" id="footer-times" data-time="<%=theme.begin_time%>"></p>
+</footer>
 <script>
     var beginTime=document.getElementById("footer-times").dataset.time
     function show_date_time(){
@@ -25,8 +25,4 @@
     }
     show_date_time();
 </script>
-<%}else{%>
-<p style="line-height: 45px">Copyright © 2020 AILOVEU <%=config.title%>
-<%}%>
-
 <%-partial("partials/baidu_tongji") %>
