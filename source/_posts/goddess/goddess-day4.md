@@ -13,9 +13,9 @@ thumbnail: https://s2.ax1x.com/2020/01/03/lazTsA.md.jpg
 *轉載，非原創*
   <div align="center" style="width:900px;">
 
-<a href="https://imagetwist.com/by231vh49mba/lavULq.jpg.html" target="_blank"><img src="https://i5.imagetwist.com/i/33022/by231vh49mba.jpg/lavULq.jpg" border="0"></a><br>
+<a href="https://imagetwist.com/249p5lc8zk5l/1.jpg.html" target="_blank"><img src="https://img32.imagetwist.com/th/33087/249p5lc8zk5l.jpg" border="0"></a><br>
 
-<a href="https://imagetwist.com/5hwzxfgsb1jq/lavGWQ.jpg.html" target="_blank"><img src="https://i5.imagetwist.com/i/33022/5hwzxfgsb1jq.jpg/lavGWQ.jpg" border="0"></a><br>
+
 
 
 
@@ -23,6 +23,7 @@ thumbnail: https://s2.ax1x.com/2020/01/03/lazTsA.md.jpg
   
   <div align="center" style="width:900px">
 
+![lavGWQ.jpg](https://s2.ax1x.com/2020/01/03/lavGWQ.jpg)
 
 ![lavtQs.jpg](https://s2.ax1x.com/2020/01/03/lavtQs.jpg)
 

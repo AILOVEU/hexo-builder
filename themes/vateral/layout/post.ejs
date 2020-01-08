@@ -16,34 +16,15 @@
   </div>
   <div class="post-page-content">
   <%-page.content%>
+  <div align="center" style="margin-top:200px;">
+    <p><img  src="/images/end.png" alt="image"></p>
+    <div>部分素材来自网络，版权归原作者，如有侵权请联系删除</div>
+    <div name="dashmain" id="dash-main-id-87ac2e" class="dash-main-3 87ac2e-1"></div><script type="text/javascript" charset="utf-8" src="https://www.dashangcloud.com/static/ds-2.0.js"></script>
+  </div>
+  
   </div>
 
-  
-  <!--评论块-->
-    <!-- <% if(theme.comment.use){%>
-  <div id="disqus_thread" style="padding:30px;text-align: center;border-top:1px solid silver " data-diaque="<%=theme.comment.shortname%>"><button style="margin: 0 auto;background-color:<%= theme.blendent.main %> " class="btn" onclick="disqus()">加载评论(被墙则无法加载)</button></div>
 
-  <script>
-      function disqus() {
-          var d = document, s = d.createElement('script'),v = d.createElement('script'),disquUrl=document.getElementById("disqus_thread").dataset.diaque;
-          v.id = 'dsq-count-scr'
-          v.src= '//'+disquUrl+'/count.js';
-          s.src = 'https://'+disquUrl+'/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(v);
-          (d.head || d.body).appendChild(s);
-      }
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <%}%> -->
-
-    <!-- id 将作为查询条件 -->
-
-<div align="center" style="margin-top:200px;">
-  <img  src="/images/end.png" alt="image">
-  <div>部分素材来自网络，版权归原作者，如有侵权请联系删除</div>
-  <div name="dashmain" id="dash-main-id-87ac2e" class="dash-main-3 87ac2e-1"></div><script type="text/javascript" charset="utf-8" src="https://www.dashangcloud.com/static/ds-2.0.js"></script>
-</div>
 
 <script>
   var obj = document.getElementById("readNum");
@@ -51,8 +32,6 @@
 </script>
 
 </span>
-</article>
-
 
 
 <nav class="post-nav" style="margin-top:20px;">
@@ -78,7 +57,7 @@
 
 </div>
 
-<div id="vcomments" style="width:900px;margin:40px auto 0;padding:30px;border:1px solid white;background: white;"></div>
+<div id="vcomments" style="padding:30px;border:1px solid white;background: white;"></div>
 
 <div class="post-toc-btn"><i class="material-icons">format_list_numbered</i></div>
 <div class="post-toc-none"><p>(无)</p></div>
@@ -88,6 +67,10 @@
       list_number: true
     }) %>
 </div>
+</article>
+
+
+
 <!--<div class="post-back"><i class="material-icons">arrow_back</i></div>-->
     <script>
       new Valine({

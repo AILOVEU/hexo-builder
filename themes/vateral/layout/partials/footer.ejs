@@ -1,7 +1,9 @@
 <a  id="top-button" onfocus="this.blur();"><div class="up upinbody" style="background-color:<%= theme.blendent.main %>"><i class="material-icons material-up">vertical_align_top</i></div></a>
 <footer class="myfooter">
-    <p style="line-height: 25px">Copyright © 2020 AILOVEU <%=config.title%>
+    <p style="line-height: 25px">Copyright © 2020  <%=config.title%> <%- mail_to('hy_wanghuan@163.com', '联系我') %> 
     <p style="font-size: 10px" id="footer-times" data-time="<%=theme.begin_time%>"></p>
+   
+
 </footer>
 <script>
     var beginTime=document.getElementById("footer-times").dataset.time
