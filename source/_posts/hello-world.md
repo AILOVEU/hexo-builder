@@ -1,42 +1,16 @@
 ---
-title: 你好 欢迎来到本站
+title: 网站更新说明 【顶置】
 tags: 
 - Other
 up: false
-date: 2019/12/18 01:00:00
+date: 2020/1/10 00:00:00
+excerpt: 无
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+> 2020/1/9:更换新主题，对外停更1周
 
-### Create a new post
+> 2020/1/8:解决post页面不居中的问题
 
-``` bash
-$ hexo new "My New Post"
-```
+> 2020/1/7:解决首页文章在手机上显示异常的问题
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+> 2019/12/18:项目上线
