@@ -9,8 +9,8 @@ tags:
 excerpt: 无
 up: false
 date: 2020/1/9 13:32:00
-thumbnail: https://s2.ax1x.com/2020/01/09/lfn27T.jpg
-cover: https://s2.ax1x.com/2020/01/09/lfn27T.jpg
+thumbnail: https://s2.ax1x.com/2020/01/10/l4SQAI.jpg
+cover: https://s2.ax1x.com/2020/01/10/l4SQAI.jpg
 ---
 
   <div align="center" style="position: relative;
