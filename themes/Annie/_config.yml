@@ -23,7 +23,7 @@ logo: /img/logo.png
 mask_alpha: 0.4
 background_image:
     mode: normal
-    normal_url: /img/header-bg.jpg 
+    normal_url: https://s2.ax1x.com/2020/01/10/lhvv5V.md.jpg 
     random_you_max: 110 
     random_you_url: https://sariay.github.io/Random-img/
     random_other_url: https://api.berryapi.net/?service=App.Bing.Images&day=-0
@@ -49,7 +49,7 @@ preloader:
 index_style: cart
 
 # index_cart_cover
-cover: /img/cart_cover.jpg
+cover: https://s2.ax1x.com/2020/01/10/lhvqDs.md.jpg
 lazy_image: /img/lazy.gif
 
 #########################################################################################################

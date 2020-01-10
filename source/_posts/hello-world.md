@@ -1,8 +1,8 @@
 ---
-title: 网站更新说明 【顶置】
+title: 网站更新说明
 tags: 
 - Other
-up: false
+up: true
 date: 2020/1/10 00:00:00
 excerpt: 无
 ---

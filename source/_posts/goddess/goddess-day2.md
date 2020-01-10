@@ -11,7 +11,7 @@ date: 2019/12/30 23:16:00
 thumbnail: https://s2.ax1x.com/2019/12/30/lltBcV.md.jpg
 cover: https://s2.ax1x.com/2019/12/30/lltBcV.md.jpg
 ---
-  <div align="center" style="width:900px">
+  <div align="center">
 
 [![llYwLD.md.jpg](https://s2.ax1x.com/2019/12/30/llYwLD.md.jpg)](https://imgchr.com/i/llYwLD)
 
