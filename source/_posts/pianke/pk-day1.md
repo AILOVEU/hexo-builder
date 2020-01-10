@@ -8,9 +8,9 @@ up: false
 date: 2019/12/22 13:46:00
 excerpt: 世界很美而你正好有空
 thumbnail: https://s2.ax1x.com/2019/12/22/QxOfqe.md.jpg
+cover: https://s2.ax1x.com/2019/12/22/QxOfqe.md.jpg
 ---
 
-<audio controls="controls"  playsinline webkit-playsinline loop  autoplay="autoplay"><br><source src="/pianke/day1.mp3" type="audio/mpeg"><br></audio></p><span id="menu_index_1" name="menu_index_1">
 
   <div align="center">
 
@@ -18,4 +18,4 @@ thumbnail: https://s2.ax1x.com/2019/12/22/QxOfqe.md.jpg
 
   </div>
   
-_感谢片刻陪伴的一个一个夜晚_
+  <audio controls="controls" playsinline="" webkit-playsinline="" loop="" autoplay="autoplay"><br><source src="/pianke/day4.m4a" type="audio/mpeg"><br></audio>

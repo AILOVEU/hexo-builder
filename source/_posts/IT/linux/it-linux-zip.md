@@ -10,6 +10,7 @@ up: false
 excerpt: linux压缩命令示例
 date: 2019/12/18 01:00:00
 thumbnail: https://s2.ax1x.com/2019/12/20/QOZfLq.jpg
+cover: https://s2.ax1x.com/2019/12/20/QOZfLq.jpg
 ---
 ##### zip
     压缩  zip  -r wx_flask.zip wx_flask

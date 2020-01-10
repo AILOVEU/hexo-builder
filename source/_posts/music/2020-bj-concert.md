@@ -8,6 +8,7 @@ excerpt: 无
 up: false
 date: 2020/1/5 13:32:00
 thumbnail: https://s2.ax1x.com/2020/01/05/lB7Q78.jpg
+cover: https://s2.ax1x.com/2020/01/05/lB7Q78.jpg
 ---
 *消息来源黄河票务、微博、大麦* 
 

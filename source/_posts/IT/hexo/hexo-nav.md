@@ -9,6 +9,7 @@ excerpt: 无
 up: false
 date: 2019/12/24 12:32:00
 thumbnail: https://s2.ax1x.com/2019/12/24/l9ObLV.md.jpg
+cover: https://s2.ax1x.com/2019/12/24/l9ObLV.md.jpg
 ---
 #### 先让项目跑起来
 

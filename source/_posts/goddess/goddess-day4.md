@@ -9,8 +9,9 @@ excerpt: 无
 up: false
 date: 2020/1/5 23:16:00
 thumbnail: https://s2.ax1x.com/2020/01/03/lazTsA.md.jpg
+cover: https://s2.ax1x.com/2020/01/03/lazTsA.md.jpg
 ---
-*轉載，非原創*
+*转载*
   <div align="center" >
 
 <a href="https://imagetwist.com/249p5lc8zk5l/1.jpg.html" target="_blank"><img src="https://img32.imagetwist.com/th/33087/249p5lc8zk5l.jpg" border="0"></a><br>

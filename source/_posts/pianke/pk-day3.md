@@ -8,6 +8,7 @@ up: false
 date: 2020/1/1 21:46:00
 excerpt: 世界很美而你正好有空
 thumbnail: https://s2.ax1x.com/2020/01/01/lJ8QN4.md.jpg
+cover: https://s2.ax1x.com/2020/01/01/lJ8QN4.md.jpg
 ---
 
 <audio controls="controls"  playsinline webkit-playsinline loop  autoplay="autoplay"><br><source src="/pianke/day3.mp3" type="audio/mpeg"><br></audio></p><span id="menu_index_1" name="menu_index_1">

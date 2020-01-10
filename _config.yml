@@ -3,13 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 欢迎来到AILOVEU的个人博客
-subtitle: ''
-description: '听听歌，聊会音乐，品品生活'
+# Site
+title: AILOVEU
+subtitle:
+description:
 keywords:
 author: Hy
-language: cn
-timezone: ''
+language: zh-CN
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -17,7 +18,6 @@ url: http://ailoveu.github.io
 root: /
 permalink: :title/
 permalink_defaults:
-  lang: zh-cn
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -52,6 +52,7 @@ highlight:
   tab_replace: ''
   wrap: true
   hljs: false
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -93,45 +94,18 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: vateral
+theme: Annie
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: https://github.com/AILOVEU/ailoveu.github.io.git
-  branch: master
+  type: ''
 
+# 添加下列参数
 
-#search  hexo-generator-search
 search:
-	path: search.xml
+  path: search.json
+  zipPath: search.zip
+  versionPath: searchVersion.txt
   field: post
-  
-prism_plugin:
-  mode: 'preprocess' 
-  theme: 'default'
-  line_number: false
-
- # Markdown-it config
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
-
+  #field: post, page or all

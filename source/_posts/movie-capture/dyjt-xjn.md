@@ -8,6 +8,7 @@ excerpt: 你给的爱 无助的等待
 up: false
 date: 2020/1/6 23:32:00
 thumbnail: https://s2.ax1x.com/2020/01/06/lyasdP.md.jpg
+cover: https://s2.ax1x.com/2020/01/06/lyasdP.md.jpg
 ---
 
   <div align="center">

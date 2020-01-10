@@ -9,6 +9,7 @@ up: false
 excerpt: jquery元素选择器
 date: 2019/12/18 01:00:00
 thumbnail: https://s2.ax1x.com/2019/12/20/QOZIoT.jpg
+cover: https://s2.ax1x.com/2019/12/20/QOZIoT.jpg
 ---
 
 ##### 联合选择器(所有元素都生效):

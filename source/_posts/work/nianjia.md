@@ -9,6 +9,7 @@ up: false
 date: 2019/12/25 12:46:00
 excerpt: 富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善
 thumbnail: https://s2.ax1x.com/2019/12/25/liXgM9.md.jpg
+cover: https://s2.ax1x.com/2019/12/25/liXgM9.md.jpg
 ---
 ### 举个栗子
 

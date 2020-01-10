@@ -9,6 +9,7 @@ up: false
 excerpt: 站成永恒，没有悲欢的姿势
 date: 2019/12/29 23:22:00
 thumbnail: https://s2.ax1x.com/2019/12/29/lusPu6.md.jpg
+cover: https://s2.ax1x.com/2019/12/29/lusPu6.md.jpg
 ---
 >如果有来生，我要做一棵树，站成永恒，没有悲欢的姿势，一半在尘土里安详，一半在风里飞扬；一半洒落荫凉，一半沐浴阳光，非常沉默、非常骄傲。从不依靠、从不寻找。
 

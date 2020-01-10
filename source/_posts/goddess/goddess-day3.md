@@ -9,6 +9,7 @@ excerpt: 无
 up: false
 date: 2020/1/2 23:16:00
 thumbnail: https://s2.ax1x.com/2020/01/02/lNkPG8.md.jpg
+cover: https://s2.ax1x.com/2020/01/02/lNkPG8.md.jpg
 ---
   <div align="center" style="width:900px">
 

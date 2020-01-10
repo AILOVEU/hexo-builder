@@ -9,6 +9,7 @@ up: false
 date: 2020/1/6 20:00:00
 excerpt: 理财就是理生活
 thumbnail: https://s2.ax1x.com/2020/01/06/lylJ10.md.jpg
+cover: https://s2.ax1x.com/2020/01/06/lylJ10.md.jpg
 ---
 
 ### 基金投资篇

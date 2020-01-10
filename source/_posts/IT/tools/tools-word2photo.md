@@ -11,6 +11,7 @@ up: false
 excerpt: 只需将doc后缀名改为rar即可
 date: 2019/1/5 00:14:00
 thumbnail: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
+cover: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 ---
 小编赶稿中
 

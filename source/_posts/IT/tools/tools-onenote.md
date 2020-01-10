@@ -11,6 +11,7 @@ up: false
 excerpt: 文章保存到onenote的快捷方式
 date: 2019/12/29 17:00:00
 thumbnail: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
+cover: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 ---
 > 注意：小编使用过程中发现，如果文章中有大量图片，存在图片保存不上的问题，为避免珍贵资料的丢失，一定要看下最后保存的情况！！！（本条添加于200105）
 

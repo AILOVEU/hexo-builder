@@ -8,6 +8,7 @@ excerpt: 所谓爱，不是不讨厌，而是绝对不能讨厌的意思
 up: false
 date: 2019/12/19 01:00:00
 thumbnail: https://s2.ax1x.com/2019/12/20/QXIDcn.md.png
+cover: https://s2.ax1x.com/2019/12/20/QXIDcn.md.png
 ---
 ###### 搞怪的不是红绿灯，而是我数不清的犹豫
 

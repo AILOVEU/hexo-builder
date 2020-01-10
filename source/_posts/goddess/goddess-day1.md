@@ -9,6 +9,7 @@ excerpt: 无
 up: false
 date: 2019/12/28 12:16:00
 thumbnail: https://s2.ax1x.com/2019/12/29/luYJZn.md.jpg
+cover: https://s2.ax1x.com/2019/12/29/luYJZn.md.jpg
 ---
   <div align="center" style="width:900px">
 

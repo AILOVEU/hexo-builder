@@ -9,6 +9,7 @@ up: false
 excerpt: 不是所有的事情，都可以用顺气自然解决
 date: 2020/1/1 12:22:00
 thumbnail: https://s2.ax1x.com/2020/01/01/lGAVFU.md.jpg
+cover: https://s2.ax1x.com/2020/01/01/lGAVFU.md.jpg
 ---
 > 不是所有的事情，都可以用顺气自然解决。
 
