@@ -99,7 +99,9 @@ theme: Annie
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repository: https://github.com/AILOVEU/ailoveu.github.io.git
+  branch: master
 
 # 添加下列参数
 
