@@ -125,7 +125,11 @@ tencent_analytics:
 post_toc:
     enable: true
     katelog: true
-    
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
 # post_mathJax
 mathjax:
   enable: true

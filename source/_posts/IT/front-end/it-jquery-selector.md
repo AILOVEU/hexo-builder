@@ -1,10 +1,11 @@
 ---
-title: <Js> Jquery选择器介绍
+title: <Js> Jquery选择器介绍【原创】
 categories:
 - IT
 tags: 
 - jquery
 - html
+- 原创
 up: false
 excerpt: jquery元素选择器
 date: 2019/12/18 01:00:00

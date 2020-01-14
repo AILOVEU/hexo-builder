@@ -1,5 +1,5 @@
 ---
-title: <效率> OneNoteWebClipper
+title: <效率> OneNoteWebClipper【原创】
 categories:
 - 工具
 tags: 
@@ -7,6 +7,7 @@ tags:
 - chrome
 - crx
 - 插件
+- 原创
 up: false
 excerpt: 文章保存到onenote的快捷方式
 date: 2019/12/29 17:00:00

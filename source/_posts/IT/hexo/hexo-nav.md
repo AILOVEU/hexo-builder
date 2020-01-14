@@ -1,10 +1,12 @@
 ---
-title: <hexo>  hexo建站教程导航页
+title: <hexo>  hexo建站教程导航页【原创】
 categories:
 - IT
 tags: 
 - hexo
 - github
+- 更新中
+- 原创
 excerpt: 无
 up: false
 date: 2019/12/24 12:32:00

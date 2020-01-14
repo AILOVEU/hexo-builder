@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 	const ANNIE = {
 		scrollLimitG        : 500,
 		scrollSpeedG        : 500,
-		delayTimeG          : 500,
+		delayTimeG          : 200,//默认值500
 		headerH             : $('header').outerHeight(),
 		postContentH        : $('#article-content').outerHeight(),
 		mainH               : $('main').outerHeight(),

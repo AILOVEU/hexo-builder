@@ -1,11 +1,12 @@
 ---
-title: <Linux> linux下文件的压缩解压
+title: <Linux> linux下文件的压缩解压【原创】
 categories:
 - IT
 tags: 
 - linux
 - zip
 - tar
+- 原创
 up: false
 excerpt: linux压缩命令示例
 date: 2019/12/18 01:00:00

@@ -1,13 +1,15 @@
 ---
-title: <效率> postman团队合作
+title: <效率> postman团队合作【原创】
 categories:
 - 工具
 tags: 
 - 效率
 - postman
+- 更新中
+- 原创
 up: false
 excerpt: 如何快速的把接口数据发给其他开发测试
-date: 2000/1/1 00:00:00
+date: 2020/1/14 00:00:00
 thumbnail: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 cover: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 ---
