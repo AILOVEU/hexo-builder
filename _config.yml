@@ -50,7 +50,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace: ''
-  wrap: true
+  wrap: false
   hljs: false
 
 # Home page setting
@@ -111,3 +111,4 @@ search:
   versionPath: searchVersion.txt
   field: post
   #field: post, page or all
+
