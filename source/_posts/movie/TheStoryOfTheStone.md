@@ -1,5 +1,5 @@
 ---
-title: <影视> 红楼梦【原创】
+title: <影视> 红楼梦人物关系【原创】
 categories:
 - 影视
 tags: 
@@ -7,7 +7,7 @@ tags:
 - 原创
 excerpt: 花谢花飞花满天，红消香断有谁怜？
 up: false
-date: 2020/1/20 23:32:00
+date: 2020/1/19 23:32:00
 thumbnail: https://s2.ax1x.com/2020/01/19/1PC6w6.jpg
 cover: https://s2.ax1x.com/2020/01/19/1PC6w6.jpg
 ---
@@ -17,18 +17,6 @@ cover: https://s2.ax1x.com/2020/01/19/1PC6w6.jpg
 
 > 贾不假，白玉为堂金作马；阿房宫，三百里，住不下金陵一个史；东海缺少白玉床，龙王来请金陵王；丰年好大雪，珍珠如土金如铁。
 
+<a href="https://imagetwist.com/egupfl9j3pl2/_________.png.html" target="_blank"><img src="https://img69.imagetwist.com/th/33335/egupfl9j3pl2.jpg" border="0"></a><br>
 
-```mermaid
-graph TD
- 王府 --> 王熙凤父母
- 王府 --> 王夫人-贾政妻
- 王府 --> 薛姨妈
- 王熙凤父母 --> 王熙凤
- 薛府 --> y
- 史府 --> z
- 贾府 --> 贾演-宁国公
- 贾府 --> 贾源-荣国公
- 贾演-宁国公 --> 贾代化
- 贾代化 --> 贾敷
- 贾代化 --> 贾敬-道士
-```
+比我想象的要多，人还没人认全呢，更新中》》》

@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 它值得独占你的ALT+SPACE
 date: 2020/1/18 00:00:00
-thumbnail: https://s2.ax1x.com/2020/01/18/1pbIQe.md.png
-cover: https://s2.ax1x.com/2020/01/18/1pbIQe.md.png
+thumbnail: https://s2.ax1x.com/2020/01/20/1i4J3D.jpg
+cover: https://s2.ax1x.com/2020/01/20/1i4J3D.jpg
 ---
 ### 它是什么？
 uTools是一个极简、插件化、跨平台的现代桌面软件。通过自由选配丰富的插件，打造你得心应手的工具集合。

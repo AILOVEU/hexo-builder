@@ -8,8 +8,8 @@ tags:
 excerpt: 【猛男版】新 宝 岛
 up: false
 date: 2020/1/13 13:32:00
-thumbnail: https://s2.ax1x.com/2020/01/13/lH7GX4.md.jpg
-cover: https://s2.ax1x.com/2020/01/13/lH7GX4.md.jpg
+thumbnail: https://s2.ax1x.com/2020/01/20/1iftPO.md.jpg
+cover: https://s2.ax1x.com/2020/01/20/1iftPO.md.jpg
 ---
 
   <div align="center" style="position: relative;

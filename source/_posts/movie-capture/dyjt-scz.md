@@ -7,8 +7,8 @@ tags:
 excerpt: 哭着吃过饭的人，是可以走下去的
 up: false
 date: 2020/1/15 23:32:00
-thumbnail: https://s2.ax1x.com/2020/01/15/lXGT1O.md.jpg
-cover: https://s2.ax1x.com/2020/01/15/lXGT1O.md.jpg
+thumbnail: https://s2.ax1x.com/2020/01/20/1i4V9U.jpg
+cover: https://s2.ax1x.com/2020/01/20/1i4V9U.jpg
 ---
 
   <div align="center">

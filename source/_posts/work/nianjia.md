@@ -1,9 +1,9 @@
 ---
-title: <学点法> 年假怎么算？ 【原创】
+title: <法律> 年假怎么算？ 【原创】
 categories:
 - 职场
 tags: 
-- 学点法
+- 法律
 - 职场
 - 原创
 up: false
