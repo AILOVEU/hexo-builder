@@ -8,6 +8,9 @@ excerpt: 无
 ---
 |时间|更新内容|文件|
 |:-|:-:|-:|
+|2020/2/3|增加刮刮乐图片能力|参考http://www.fly63.com/article/detial/5788|
+|2020/1/30|更改blockquote样式为#74B1DA|Annie\source\ .. \custom.styl|
+|2020/1/30|添加myblockquote引用样式|Annie\source\ .. \base.styl|
 |2020/1/19|添加mermaid支持||
 |2020/1/19|文章内图片根据data-scr配置打开网页还是浏览图片|Annie\layout\ ..\post\gallery.ejs|
 |2020/1/18|导航页图片添加外边框||

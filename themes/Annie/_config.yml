@@ -136,7 +136,7 @@ mathjax:
   
 # post_code
 # highlight_theme: normal | night | night blue | night bright | night eighties
-highlight_theme: night bright
+highlight_theme: normal
 code_copy:
     enable: true
 
@@ -242,7 +242,7 @@ mermaid: ## mermaid url https://github.com/knsv/mermaid
   options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     #startOnload: true  // default true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''

@@ -29,3 +29,26 @@ $("html,body").click(function(e) {
   });
   e.stopPropagation()
 });
+
+
+app5MarkCtx = app5Mark.getContext('2d');
+app5Mark.width = 600;
+app5Mark.height = 600;
+var imageFill = new Image();
+imageFill.src = 'https://s2.ax1x.com/2020/02/03/1UiL4g.md.jpg'
+imageFill.onload = function(){
+  app5MarkCtx.drawImage(this,0,0,600,600)
+}
+app5MarkMouseDownTag = 0;
+app5Mark.addEventListener('mousedown', function(e){
+  app5MarkMouseDownTag = 1
+  app5MarkCtx.clearRect(e.offsetX - 30, e.offsetY - 30, 60, 60)
+})
+app5Mark.addEventListener('mousemove', function(e){
+  if(app5MarkMouseDownTag == 1)
+    app5MarkCtx.clearRect(e.offsetX - 60, e.offsetY - 60, 120, 120)
+})
+app5Mark.addEventListener('mouseup', function(e){
+  app5MarkMouseDownTag = 0
+})
+

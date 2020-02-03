@@ -17,6 +17,6 @@ cover: https://s2.ax1x.com/2020/01/19/1PC6w6.jpg
 
 > 贾不假，白玉为堂金作马；阿房宫，三百里，住不下金陵一个史；东海缺少白玉床，龙王来请金陵王；丰年好大雪，珍珠如土金如铁。
 
-<a href="https://imagetwist.com/egupfl9j3pl2/_________.png.html" target="_blank"><img src="https://img69.imagetwist.com/th/33335/egupfl9j3pl2.jpg" border="0"></a><br>
+[![1UkMyn.md.jpg](https://s2.ax1x.com/2020/02/03/1UkMyn.md.jpg)](https://imgchr.com/i/1UkMyn)
 
-比我想象的要多，人还没人认全呢，更新中》》》
+更新中

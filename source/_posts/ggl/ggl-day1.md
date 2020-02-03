@@ -1,9 +1,9 @@
 ---
-title: <看评论> 柯南这首片尾曲的歌词
+title: <刮刮乐> 柯南这首片尾曲的歌词
 categories:
-- 看评论
+- 刮刮乐
 tags: 
-- 看评论
+- 刮刮乐
 - 柯南
 - 每日一冷
 excerpt: 无
@@ -17,4 +17,13 @@ cover: https://s2.ax1x.com/2020/01/12/lTUPmt.md.jpg
 
 ![lTaRGF.jpg](https://s2.ax1x.com/2020/01/12/lTaRGF.jpg)
 
+ <ggl>
+  以前带新一来的时候都没发现这是家自助餐厅，因为新一会不停的把小兰爱吃的菜端上来。– 笑点研究所
+</ggl>
+
+
+
+
   </div>
+
+

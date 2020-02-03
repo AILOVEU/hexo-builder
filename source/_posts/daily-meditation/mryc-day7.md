@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 无
 date: 2020/1/16 18:22:00
-thumbnail: https://s2.ax1x.com/2020/01/20/1ihLAP.md.jpg
-cover: https://s2.ax1x.com/2020/01/20/1ihLAP.md.jpg
+thumbnail: https://s2.ax1x.com/2020/02/01/18O5wV.jpg
+cover: https://s2.ax1x.com/2020/02/01/18O5wV.jpg
 ---
 > 我们必须全力以赴，同时又不抱持任何希望。
 
