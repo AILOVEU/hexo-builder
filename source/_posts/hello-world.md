@@ -8,6 +8,8 @@ excerpt: 无
 ---
 |时间|更新内容|文件|
 |:-|:-:|-:|
+|2020/2/4|增加星空连线背景|参考https://www.lvfan.xyz/等|
+|2020/2/4|更换logo和链接指向||
 |2020/2/3|增加刮刮乐图片能力|参考http://www.fly63.com/article/detial/5788|
 |2020/1/30|更改blockquote样式为#74B1DA|Annie\source\ .. \custom.styl|
 |2020/1/30|添加myblockquote引用样式|Annie\source\ .. \base.styl|

@@ -49,7 +49,7 @@ preloader:
 index_style: cart
 
 # index_cart_cover
-cover: https://s2.ax1x.com/2020/01/10/lhvqDs.md.jpg
+cover: https://s2.ax1x.com/2020/02/04/1BrA0O.jpg
 lazy_image: /img/lazy.gif
 
 #########################################################################################################
@@ -59,7 +59,7 @@ lazy_image: /img/lazy.gif
 relate:
     enable: true
     posts_limit: 10
-    posts_excerpt: 120
+    posts_excerpt: 60
 
 # post_comment
 comment:
@@ -171,34 +171,21 @@ socialShare:
 # social links
 # Check the icon in the page of Icomoon
 social:
-	one: 
-        url: http://github.com/
-        icon: <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
 	zhihu: 
-        url: http://github.com/
+        url: https://www.zhihu.com/people/AILOVEUU
         icon: <span class="icon-zhihu"></span>
 	github:
-        url: http://github.com/
+        url: https://github.com/AILOVEU
         icon: <span class="icon-github"></span>
 	weibo: 
-        url: http://github.com/
-        icon: <span class="icon-sina-weibo "></span>   
-	pinterest: 
-        url: http://github.com/
-        icon: <span class="icon-pinterest2"></span>   
-	instagram:
-        url: http://github.com/
-        icon: <span class="icon-instagram"></span>   
-	twitter:
-        url: http://github.com/
-        icon: <span class="icon-twitter"></span>   
-	rss: 
-        url: /atom.xml
-        icon: <span class="icon-rss"></span>   
-
+        url: https://www.weibo.com/p/1005055306271796
+        icon: <span class="icon-sina-weibo "></span>  
+	douban:
+        url: https://www.douban.com/people/AILOVEUU
+        icon: <span class="icon-douban "></span>  
 # copyright  
 since: 2019
-author: Sariay
+author: AILOVEU
 
 #########################################################################################################
 # 006-GALLERY PAGE
