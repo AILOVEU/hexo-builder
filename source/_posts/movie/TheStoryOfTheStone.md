@@ -5,12 +5,17 @@ categories:
 tags: 
 - 红楼梦
 - 原创
+- 四大名著
 excerpt: 花谢花飞花满天，红消香断有谁怜？
 up: false
 date: 2020/1/19 23:32:00
 thumbnail: https://s2.ax1x.com/2020/01/19/1PC6w6.jpg
 cover: https://s2.ax1x.com/2020/01/19/1PC6w6.jpg
 ---
+<audio controls="controls"  playsinline webkit-playsinline loop  autoplay="autoplay"><br><source src="/file/枉凝眉.m4a" type="audio/mpeg"><br></audio>
+
+
+
 《红楼梦》又名《石头记》，描绘了一批举止见识出于须眉之上的闺阁佳人的人生百态，展现了真正的人性美和悲剧美<sup>[1]</sup>。
 
 下面借助87版电视剧，给大家梳理下其中的人物关系：
