@@ -190,7 +190,7 @@ window.requestAnimFrame = (function() {
 var canvas=document.getElementById("universe");
 var cxt=canvas.getContext("2d");
 var w,h;
-var num=300;
+var num=150;
 var data=[];
 var move=[];
 init();
