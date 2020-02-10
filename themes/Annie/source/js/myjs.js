@@ -200,7 +200,7 @@ function init(){
   h=canvas.height=window.innerHeight;
   for(var i=0;i<num;i++)//每个粒子都有自己的角度,从始至终一直是初始化的这个
   {//随机取得一个坐标以及方向增量
-      data[i]={x:Math.random()*w,y:Math.random()*h,cx:Math.random()*6-3,cy:Math.random()*6-3};
+      data[i]={x:Math.random()*w,y:Math.random()*h,cx:Math.random()*3-1,cy:Math.random()*3-1};
       circle(data[i].x,data[i].y);//画点
   }
 }
