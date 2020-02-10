@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 	const ANNIE = {
 		scrollLimitG        : 500,
 		scrollSpeedG        : 500,
-		delayTimeG          : 200,//默认值500
+		delayTimeG          : 500,//默认值500
 		headerH             : $('header').outerHeight(),
 		postContentH        : $('#article-content').outerHeight(),
 		mainH               : $('main').outerHeight(),
@@ -192,7 +192,7 @@ jQuery(document).ready(function ($) {
 					console.log('timeout');
 				}
 				return timeoutCalled();
-			}, ANNIE.delayTimeG * 20); // delayTime = ANNIE.delayTimeG * 20 = 10s
+			}, ANNIE.delayTimeG * 4); // delayTime = ANNIE.delayTimeG * 20 = 10s
 			
 			// 10s以前, The background iamge of header is already loaded.
 			/**

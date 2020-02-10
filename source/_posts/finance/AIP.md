@@ -9,7 +9,7 @@ tags:
 - 更新中
 - 原创
 up: false
-date: 2020/1/14 20:00:00
+date: 2020/1/14 20:00:00
 excerpt: 基金定投
 thumbnail: https://s2.ax1x.com/2020/01/20/1ifToV.md.jpg
 cover: https://s2.ax1x.com/2020/01/20/1ifToV.md.jpg

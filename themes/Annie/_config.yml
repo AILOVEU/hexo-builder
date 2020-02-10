@@ -40,7 +40,7 @@ motto:
 # animation: spinner | transition | cyclic
 preloader:
     enable: true
-    animation: spinner
+    animation: cyclic
 
 #########################################################################################################
 # 003-INDEX
