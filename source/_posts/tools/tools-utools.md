@@ -6,7 +6,7 @@ tags:
 - 效率
 - 原创
 up: false
-excerpt: 它值得独占你的ALT+SPACE
+excerpt: 虽然我已经习惯了鼠标拖到右下角，但现在我更喜欢alt+space
 date: 2020/1/18 00:00:00
 thumbnail: https://s2.ax1x.com/2020/01/20/1i4J3D.jpg
 cover: https://s2.ax1x.com/2020/01/20/1i4J3D.jpg
