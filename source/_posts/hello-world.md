@@ -9,7 +9,8 @@ excerpt: 无
 网站更新记录：
 |时间|更新内容|文件|
 |:-|:-|:-|
-|2020/2/27|只在首页展示fixbackground|header.ejs,添加if(is_home)控制|
+|2020/2/27|因为上一条的修改，需要让nav-trigger尽早出来|Annie/source/js/main.js修改scrollLimitG为50|
+|2020/2/27|只在首页展示fixbackground、load|header.ejs,添加if(is_home)控制|
 |2020/2/27|删除大部分不重要的文章||
 |2020/2/9|修复audio不显示问题|添加audio {width:300px;height: 54px;}|
 |2020/2/9|首次引入网易云音乐外联|直接使用外联地址|
@@ -35,4 +36,5 @@ excerpt: 无
 - 改进刮刮乐手机上体验
 - ~~只在首页展示fixbackground~~
 - 可能会更换图床(现在的太慢了)
+- 解决网速慢的情况下的鬼畜情况
 

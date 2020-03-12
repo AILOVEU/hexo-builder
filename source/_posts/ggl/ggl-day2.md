@@ -17,7 +17,7 @@ cover: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 
 
 <div id="app5">
-		<canvas id="app5Mark" style="background:url(https://s2.ax1x.com/2020/02/03/1UpqSI.png) center center/100% 100% no-repeat; " width="540px" height="430px"></canvas>
+		<canvas id="app5Mark" style="background:url(https://s2.ax1x.com/2020/02/03/1UpqSI.png) center center/100% 100% no-repeat; " width="33.75rem" height="430px"></canvas>
 	</div>
   
   </div>

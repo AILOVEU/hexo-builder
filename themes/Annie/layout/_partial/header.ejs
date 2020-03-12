@@ -1,7 +1,7 @@
 <!-- Preloader -->
 
 <% 
-	if(theme.preloader.enable) { 
+	if(theme.preloader.enable && is_home()) { 
 		const animation = theme.preloader.animation;
 %>
 	<div id="preloader">

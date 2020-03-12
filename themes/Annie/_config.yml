@@ -103,7 +103,7 @@ leancloud_count:
         limit: 10
 
 busuanzi_count:
-    enable: true
+    enable: false
 
 baidu_analytics:
     enable: true

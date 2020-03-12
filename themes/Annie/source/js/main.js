@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
 	 * loadAnimation: The animation of loading for 'fun Annie_LoadPost()' & 'fun Annie_QueryPostsByTag()'.
 	 */
 	const ANNIE = {
-		scrollLimitG        : 500,
+		scrollLimitG        : 50,
 		scrollSpeedG        : 500,
 		delayTimeG          : 500,//默认值500
 		headerH             : $('header').outerHeight(),

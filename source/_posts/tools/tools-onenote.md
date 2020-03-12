@@ -15,25 +15,17 @@ date: 2019/12/29 17:00:00
 thumbnail: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 cover: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 ---
-> 注意：小编使用过程中发现，如果文章中有大量图片，存在图片保存不上的问题，为避免珍贵资料的丢失，一定要看下最后保存的情况！！！（本条添加于200105）
+### oneNote浏览器插件
+
+> 注意：小编使用过程中发现，如果文章有blob图片、webp图片，存在图片保存不上的问题，为避免珍贵资料的丢失，一定要看下最后保存的情况！！！
 
 > 下载地址
 
-[chrome 网上应用商店](https://chrome.google.com/webstore/detail/gojbdfnpnhogfdgjbigejoaolejmgdhk)
+[跳转Chrome 网上应用商店](https://chrome.google.com/webstore/detail/gojbdfnpnhogfdgjbigejoaolejmgdhk)
 
-> 不会翻墙的，我已经帮你们下载好了.把crx拖拽到chorme内核的浏览器里即可
+> 不会翻墙的，我已经帮你们下载好了.把crx文件拖拽到chorme内核的浏览器里即可
 
-[站内下载](/file/OneNoteWebClipper.crx)
-
-> 网页文章如何快速保存下来？你或许会这样
-
-- _复制粘贴word_
-
-- _借助浏览器的保存为图片_
-
-- _打印，保存为pdf_
-
-> 如果你也用OneNote，那你就有了第4中选择
+[点我站内下载](/file/OneNoteWebClipper.crx)
 
 > 简单介绍下，OneNoteWebClipper一共有四种模式
 
@@ -53,8 +45,7 @@ cover: https://s2.ax1x.com/2019/12/29/lur7j0.md.jpg
 
 > 【书签】仅仅是收藏地址，和浏览器的收藏功能是一样的
 
-
 [![luB0bD.md.png](https://s2.ax1x.com/2019/12/29/luB0bD.md.png)](https://imgchr.com/i/luB0bD)
 
 
-
+### 微信公众号保存到oneNote(神器)
