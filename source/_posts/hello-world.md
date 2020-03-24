@@ -3,12 +3,13 @@ title: 网站更新说明
 tags: 
 - Other
 up: true
-date: 2020/2/27 0023:00:00
+date: 2020/3/24 23:00:00
 excerpt: 无
 ---
 网站更新记录：
 |时间|更新内容|文件|
 |:-|:-|:-|
+|2020/3/24|添加鼠标样式html cursor||
 |2020/2/27|因为上一条的修改，需要让nav-trigger尽早出来|Annie/source/js/main.js修改scrollLimitG为50|
 |2020/2/27|只在首页展示fixbackground、load|header.ejs,添加if(is_home)控制|
 |2020/2/27|删除大部分不重要的文章||
