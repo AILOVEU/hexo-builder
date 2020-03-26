@@ -11,15 +11,10 @@ thumbnail: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 cover: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 ---
 
-  <div align="center" style="width:80%;">
+  <div align="center" style="width:80%;margin:0 auto;">
 
-[![1UpXOf.png](https://s2.ax1x.com/2020/02/03/1UpXOf.png)](https://imgchr.com/i/1UpXOf)
+![Gpb82D.jpg](https://s1.ax1x.com/2020/03/26/Gpb82D.jpg)
 
+ <img src="https://s1.ax1x.com/2020/03/26/GpxVFs.jpg" width="400" id= 'img' alt="">
 
-<div id="app5">
-		<canvas id="app5Mark" style="background:url(https://s2.ax1x.com/2020/02/03/1UpqSI.png) center center/100% 100% no-repeat; " width="33.75rem" height="430px"></canvas>
-	</div>
-  
   </div>
-
-
