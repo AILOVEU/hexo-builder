@@ -1,6 +1,6 @@
 # Annie theme
 [![GitHub issues](https://img.shields.io/github/issues/Sariay/hexo-theme-Annie?style=for-the-badge)](https://github.com/Sariay/hexo-theme-Annie/issues)  ![GitHub top language](https://img.shields.io/github/languages/top/Sariay/hexo-theme-Annie?style=for-the-badge)  [![GitHub license](https://img.shields.io/github/license/Sariay/hexo-theme-Annie?style=for-the-badge)](https://github.com/Sariay/hexo-theme-Annie/blob/master/LICENSE)
-
+ 
 Annie是一个简单的Hexo博客主题，如果你喜欢散文、诗歌、小说......那么它可能合你心意!  [☞预览-1](https://sariay.github.io/2019/03/12/相册主题Dream介绍/)，[☞预览-2](https://sariay.github.io/hexo-theme-Annie/)
 
 ### Features
