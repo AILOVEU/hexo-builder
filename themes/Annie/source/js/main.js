@@ -148,11 +148,14 @@ jQuery(document).ready(function ($) {
 			browserRefreshStatus = PRELOADER.browserRefresh();
 			
 		$(window).scroll(function () {		
+			
+
 			currentScrollTop = $(document).scrollTop();		
 			PRELOADER.setCookie('currentScrollTop', currentScrollTop);		
 		}).trigger('scroll');
 		
 		function singlePageScroll(){
+			
 			if (browserRefreshStatus) {
 				currentScrollHeight = currentScrollTop || PRELOADER.getCookie('currentScrollTop');
 				console.info("This page is reloaded");
@@ -280,6 +283,8 @@ jQuery(document).ready(function ($) {
 			scrollLimit = ANNIE.scrollLimitG;
 
 		$(window).scroll(function () {
+			
+
 			let scrollTop = $(document).scrollTop(),
 				docHeight = $(document).height(),
 				windowHeight = $(window).height(),
@@ -313,7 +318,8 @@ jQuery(document).ready(function ($) {
 				}).hide();
 				$('.nav-trigger').hide();
 			}
-
+			$('.nav-trigger').show();
+			$('#navigation-hide p').show();
 			//Current post or page title
 			if (scrollTop >= headerH + 300) {
 				$('#navigation-hide p').show();
@@ -722,7 +728,7 @@ jQuery(document).ready(function ($) {
 		Annie_QueryPostsByTag();
 		Annie_LanguageSet();
 		Annie_ImageLazyLoad();
-		Annie_NiceScroll();
+		// Annie_NiceScroll();
 	})();
 });
 

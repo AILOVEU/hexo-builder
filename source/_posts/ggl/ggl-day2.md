@@ -15,6 +15,7 @@ cover: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 
 ![Gpb82D.jpg](https://s1.ax1x.com/2020/03/26/Gpb82D.jpg)
 
- <img src="https://s1.ax1x.com/2020/03/26/GpxVFs.jpg" width="400" id= 'img' alt="">
 
   </div>
+
+  <div style="background-image: url(https://s1.ax1x.com/2020/03/26/GpxVFs.jpg)" id= 'img' ></div>

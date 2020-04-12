@@ -4,17 +4,17 @@
 
 # Site
 # Site
-title: AILOVEU
-subtitle:
-description:
-keywords:
+title: AI的谜底 | AILOVEU
+subtitle: 个人博客
+description: 个人博客，分享兴趣爱好
+keywords: 博客,空间,分享
 author: Hy
 language: zh-CN
 timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ailoveu.github.io
+url: https://ailoveu.github.io
 root: /
 permalink: :title/
 permalink_defaults:
@@ -100,6 +100,7 @@ theme: Annie
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
+  #repository: git@117.51.155.136:/srv/gitrepo/project.git
   repository: https://github.com/AILOVEU/ailoveu.github.io.git
   branch: master
 

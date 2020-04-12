@@ -1,43 +1,297 @@
-function color16() { //十六进制颜色随机
-  var r = Math.floor(Math.random() * 256);
-  var g = Math.floor(Math.random() * 256);
-  var b = Math.floor(Math.random() * 256);
-  var color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
-  return color;
-}
-$("html,body").click(function(e) {
-  var gcd = new Array("❤", "^_^", "自由", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
-  var n = Math.floor(Math.random() * gcd.length);
-  var $i = $("<b/>").text(gcd[n]);
-  var x = e.pageX,
-  y = e.pageY;
-  $i.css({
-    "z-index": 99999,
-    "top": y - 20,
-    "left": x,
-    "position": "absolute",
-    "color": color16()
+/**
+ * 鼠标点击，弹出20字
+ */
+(function () {
+  function color16() { //十六进制颜色随机
+    var r = Math.floor(Math.random() * 256);
+    var g = Math.floor(Math.random() * 256);
+    var b = Math.floor(Math.random() * 256);
+    var color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+    return color;
+  }
+  $("html,body").click(function (e) {
+    var gcd = new Array("❤", "^_^", "自由", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+    var n = Math.floor(Math.random() * gcd.length);
+    var $i = $("<b/>").text(gcd[n]);
+    var x = e.pageX,
+      y = e.pageY;
+    $i.css({
+      "z-index": 99999,
+      "top": y - 20,
+      "left": x,
+      "position": "absolute",
+      "color": color16()
+    });
+    $("body").append($i);
+    $i.animate({
+        "top": y - 180,
+        "opacity": 0
+      },
+      1500,
+      function () {
+        $i.remove()
+      });
+    e.stopPropagation()
   });
-  $("body").append($i);
-  $i.animate({
-    "top": y - 180,
-    "opacity": 0
-  },
-  1500,
-  function() {
-    $i.remove()
-  });
-  e.stopPropagation()
-});
+})()
+
 
 /**
-* 星空连线
-*/
-/**
-* created by lvfan
-* 2018-09-04
-*/
+ * 星空连线
+ * created by lvfan
+ * 2018-09-04
+ */
+window.requestAnimFrame = (function () {
+  return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame ||
+    function (callback) {
+      window.setTimeout(callback, 1000 / 60);
+    };
+})();
+//version 2
+(function(){
+  
+  //帧动画
+  var canvas = document.getElementById("universe");
+  var cxt = canvas.getContext("2d");
+  var w, h;
+  var num = 50;
+  var data = [];
+  var move = [];
+  init();
+  //初始化位置
+  function init() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+    for (var i = 0; i < num; i++) //每个粒子都有自己的角度,从始至终一直是初始化的这个
+    { //随机取得一个坐标以及方向增量
+      data[i] = {
+        x: Math.random() * w,
+        y: Math.random() * h,
+        cx: Math.random() * 3 - 1,
+        cy: Math.random() * 3 - 1
+      };
+      circle(data[i].x, data[i].y); //画点
+    }
+  }
 
+  function circle(x, y) {
+    cxt.save();
+    cxt.fillStyle = "pink";
+    cxt.beginPath();
+    cxt.arc(x, y, 0.5, Math.PI * 2, false);
+    cxt.closePath();
+    cxt.fill();
+    cxt.restore();
+  }!
+  function draw() { //循环自执行
+    cxt.clearRect(0, 0, w, h); //清除画布
+    for (var i = 0; i < num; i++) {
+      data[i].x += data[i].cx; //位移
+      data[i].y += data[i].cy;
+      if (data[i].x > w || data[i].x < 0) data[i].cx = -data[i].cx; //边界反弹
+      if (data[i].y > h || data[i].y < 0) data[i].cy = -data[i].cy;
+      circle(data[i].x, data[i].y);
+      for (var j = i + 1; j < num; j++) //寻找距离较小的点(i+1握手原理)
+      {
+        if ((data[i].x - data[j].x) * (data[i].x - data[j].x) + (data[i].y - data[j].y) * (data[i].y - data[j].y) <= 80 * 80) line(data[i].x, data[i].y, data[j].x, data[j].y);
+      }
+      if (move.x) //鼠标跟随
+      {
+        if ((data[i].x - move.x) * (data[i].x - move.x) + (data[i].y - move.y) * (data[i].y - move.y) <= 100 * 100) line(data[i].x, data[i].y, move.x, move.y);
+      }
+
+    }
+    /* setInterval(function(){
+      draw();
+    },13); */
+    //定时器会卡顿,所以不用
+    window.requestAnimFrame(draw);
+  }();
+
+  function line(x1, y1, x2, y2) {
+    var color = cxt.createLinearGradient(x1, y1, x2, y2); //设置渐变线颜色
+    color.addColorStop(0, "#eee");
+    color.addColorStop(0.5, "#eee");
+    color.addColorStop(1, "#eee");
+    cxt.save();
+    cxt.strokeStyle = color;
+    cxt.beginPath();
+    cxt.moveTo(x1, y1); //起点
+    cxt.lineTo(x2, y2);
+    cxt.stroke();
+    cxt.restore();
+  }
+  document.onmousemove = function (e) {
+    move.x = e.clientX;
+    move.y = e.clientY;
+  }
+})();
+
+
+/**
+ * 刮刮乐
+ */
+(function(){
+
+  const oImgs = document.querySelectorAll('#img')
+  //oImg.readyState 图片加载状态
+  if (oImgs.length > 0) {
+    var oImg = oImgs[0];
+    var temp = new Image();
+    temp.src = oImg.getAttribute('src'); //只会请求一次
+    // onload判断图片加载完毕，真是图片加载完毕，再赋值给dom节点
+    temp.onload = function () {
+      // 获取自定义属性data-src，用真图片替换假图片
+      oImg.src = oImg.getAttribute('data-src');
+      draw(oImg);
+    }
+  }
+  
+  function draw(oImg) { //等图片加载完成后再添加canvas画布在上面
+    let can = document.createElement('canvas'); //创建一个canvas画布
+    can.width = oImg.width; //等于图片的宽高
+    can.height = oImg.height;
+    can.style.position = "absolute"; //canvas画布设置浮动会漂浮在图片上
+    can.style.left = oImg.offsetLeft + "px"; //保存与画布位置一致
+    can.style.top = oImg.offsetTop + "px";
+    //找到图片的父级：parentNode  在oImg子元素前面添加canvas标签：insertBefore
+    oImg.parentNode.insertBefore(can, oImg) //在img前面去插入canvas标签
+    let ctx = can.getContext('2d');
+    ctx.fillStyle = "#bbb"; //刮刮乐的颜色
+    ctx.fillRect(0, 0, oImg.width, oImg.height) //填充宽度
+    //合成:处理合成图片的透明样式；
+    //拖拽的时候，canvas图层显示透明；destination-out：新图形与原图形重叠部分透明
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.strokeStyle = "#eee"; //触笔的颜色 随便  因为它终究变成透明
+    ctx.lineWidth = 30; //拖动时开始画线的线宽
+    ctx.lineCap = "round" //这两步是把画笔变成圆形
+    //按下，移动，抬起事件
+    can.onmousedown = function (e) {
+      e = e || window.event; //兼容低版本IE浏览器
+      //e.pageX距离文档右边缘； offsetLeft：canvas画布距离文档的右边距离
+      let x = e.pageX - can.offsetLeft; //得到的x是在canvas上的坐标值
+      let y = e.pageY - can.offsetTop;
+      ctx.beginPath();
+      // ctx.moveTo(  x,y )//从哪里开始来画
+      ctx.arc(x, y, 15, 0, 6.3, false); //点第一下是画一个圆
+      ctx.fill();
+      //按下后拖拽
+      can.onmousemove = function (e) { //拖动时一直执行下面
+        e = e || window.event; //兼容低版本IE浏览器
+        ctx.beginPath(); //拖动时开始画线
+        ctx.moveTo(x, y); //起始点   
+        ctx.lineTo(e.pageX - can.offsetLeft, e.pageY - can.offsetTop); //移动的过程
+        //每次移动的时候，样式所在的坐标；
+        x = e.pageX - can.offsetLeft; //第二次渲染刮图片效果的起始点应该在上一次的终止点
+        y = e.pageY - can.offsetTop;
+        ctx.stroke(); //弹出图形并恢复画布
+      }
+      document.onmouseup = function () {
+        //抬起后将事件注销
+        can.onmousemove = null;
+        this.onmouseup = null;
+        check(); //完成后通过像素计算刮过的的百分比
+      }
+    }
+  
+    function check() {
+      //获取画布的像素列表
+      let data = ctx.getImageData(0, 0, can.width, can.height).data;
+      let n = 0; //计算透明像素的个数
+      for (let i = 0; i < data.length; i += 4) { //感觉这一步比较消耗性能
+        //RGBA
+        if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0 && data[i + 3] == 0) {
+          n++
+        }
+      }
+      let f = n * 100 / (can.width * can.height); //算出所刮的面积的占比；
+      //刮开面积的比例
+      if (f > 30) { //如果所刮的面积大于30%   则将canvas画布整体清除fillRect
+        ctx.beginPath();
+        ctx.fillRect(0, 0, can.width, can.height)
+      }
+    }
+  }
+})();
+
+/**
+ * 懒加载图片
+ * 
+ */
+(function () {
+  // onload是等所有的资源文件加载完毕以后再绑定事件
+  window.onload = function () {
+    // 获取图片列表，即img标签列表
+    var imgs = document.querySelectorAll('.lazy-img');
+    // 获取到浏览器顶部的距离
+    function getTop(e) {
+      return e.offsetTop;
+    }
+
+    // 懒加载实现
+    function lazyload(imgs) {
+      // 可视区域高度
+      var h = window.innerHeight;
+      //滚动区域高度
+      var s = document.documentElement.scrollTop || document.body.scrollTop;
+      for (var i = 0; i < imgs.length; i++) {
+        //图片距离顶部的距离大于可视区域和滚动区域之和时懒加载
+        if ((h + s) > getTop(imgs[i])) {
+          // 真实情况是页面开始有2秒空白，所以使用setTimeout定时2s
+          (function (i) {
+            setTimeout(function () {
+                // 不加立即执行函数i会等于9
+                // 隐形加载图片或其他资源，
+                //创建一个临时图片，这个图片在内存中不会到页面上去。实现隐形加载
+                var temp = new Image();
+                temp.src = imgs[i].getAttribute('data-src'); //只会请求一次
+                // onload判断图片加载完毕，真是图片加载完毕，再赋值给dom节点
+                temp.onload = function () {
+                  // 获取自定义属性data-src，用真图片替换假图片
+                  imgs[i].src = imgs[i].getAttribute('data-src')
+                  imgs[i].class = "img";
+                }
+              },
+              2000)
+          })(i)
+        }
+      }
+    }
+    lazyload(imgs);
+
+    // 滚屏函数
+    window.onscroll = function () {
+      lazyload(imgs);
+    }
+  }
+})();
+
+/**
+ * 特定页面加载mermaidEle
+ * 
+ */
+(function () {
+  var mermaidEle = document.querySelectorAll("#mermaidEle");
+  if (mermaidEle.length > 0) {
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js';
+    head.appendChild(script);
+    if (window.mermaid) {
+      mermaid.initialize({
+        theme: 'default'
+      });
+    }
+  }
+})();
+
+
+/**
+ * 星空连线
+ * 
+ */
+// version 1
 // (function drawBg() {
 //   console.log("draw bg");
 //   window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
@@ -167,85 +421,6 @@ $("html,body").click(function(e) {
 //       return (Math.random() * (max - min) + min);
 //   }
 // }());
-//version 2
-window.requestAnimFrame = (function() {
-  return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame ||
-  function(callback) {
-    window.setTimeout(callback, 1000 / 60);
-  };
-})(); //帧动画
-var canvas = document.getElementById("universe");
-var cxt = canvas.getContext("2d");
-var w, h;
-var num = 50;
-var data = [];
-var move = [];
-init();
-//初始化位置
-function init() {
-  w = canvas.width = window.innerWidth;
-  h = canvas.height = window.innerHeight;
-  for (var i = 0; i < num; i++) //每个粒子都有自己的角度,从始至终一直是初始化的这个
-  { //随机取得一个坐标以及方向增量
-    data[i] = {
-      x: Math.random() * w,
-      y: Math.random() * h,
-      cx: Math.random() * 3 - 1,
-      cy: Math.random() * 3 - 1
-    };
-    circle(data[i].x, data[i].y); //画点
-  }
-}
-function circle(x, y) {
-  cxt.save();
-  cxt.fillStyle = "pink";
-  cxt.beginPath();
-  cxt.arc(x, y, 0.5, Math.PI * 2, false);
-  cxt.closePath();
-  cxt.fill();
-  cxt.restore();
-} !
-function draw() { //循环自执行
-  cxt.clearRect(0, 0, w, h); //清除画布
-  for (var i = 0; i < num; i++) {
-    data[i].x += data[i].cx; //位移
-    data[i].y += data[i].cy;
-    if (data[i].x > w || data[i].x < 0) data[i].cx = -data[i].cx; //边界反弹
-    if (data[i].y > h || data[i].y < 0) data[i].cy = -data[i].cy;
-    circle(data[i].x, data[i].y);
-    for (var j = i + 1; j < num; j++) //寻找距离较小的点(i+1握手原理)
-    {
-      if ((data[i].x - data[j].x) * (data[i].x - data[j].x) + (data[i].y - data[j].y) * (data[i].y - data[j].y) <= 80 * 80) line(data[i].x, data[i].y, data[j].x, data[j].y);
-    }
-    if (move.x) //鼠标跟随
-    {
-      if ((data[i].x - move.x) * (data[i].x - move.x) + (data[i].y - move.y) * (data[i].y - move.y) <= 100 * 100) line(data[i].x, data[i].y, move.x, move.y);
-    }
-
-  }
-  window.requestAnimFrame(draw);
-  /* setInterval(function(){
-    draw();
-},13); */
-  //定时器会卡顿,所以不用
-} ();
-function line(x1, y1, x2, y2) {
-  var color = cxt.createLinearGradient(x1, y1, x2, y2); //设置渐变线颜色
-  color.addColorStop(0, "#eee");
-  color.addColorStop(0.5, "#eee");
-  color.addColorStop(1, "#eee");
-  cxt.save();
-  cxt.strokeStyle = color;
-  cxt.beginPath();
-  cxt.moveTo(x1, y1); //起点
-  cxt.lineTo(x2, y2);
-  cxt.stroke();
-  cxt.restore();
-}
-document.onmousemove = function(e) {
-  move.x = e.clientX;
-  move.y = e.clientY;
-}
 /*
 //version3
 var canvas = document.getElementById("universe");
@@ -350,119 +525,3 @@ function randomColor() {
   return "rgb(" + randomNum(0, 255) + "," + randomNum(0, 255) + "," + randomNum(0, 255) + ")";
 }
 */
-
-const oImg = document.getElementById('img');
-//oImg.readyState 图片加载状态
-oImg && draw();
-
-function draw() { //等图片加载完成后再添加canvas画布在上面
-  let can = document.createElement('canvas'); //创建一个canvas画布
-  can.width = oImg.width; //等于图片的宽高
-  can.height = oImg.height;
-  can.style.position = "absolute"; //canvas画布设置浮动会漂浮在图片上
-  can.style.left = oImg.offsetLeft + "px"; //保存与画布位置一致
-  can.style.top = oImg.offsetTop + "px";
-  //找到图片的父级：parentNode  在oImg子元素前面添加canvas标签：insertBefore
-  oImg.parentNode.insertBefore(can, oImg) //在img前面去插入canvas标签
-  let ctx = can.getContext('2d');
-  ctx.fillStyle = "#bbb"; //刮刮乐的颜色
-  ctx.fillRect(0, 0, oImg.width, oImg.height) //填充宽度
-  //合成:处理合成图片的透明样式；
-  //拖拽的时候，canvas图层显示透明；destination-out：新图形与原图形重叠部分透明
-  ctx.globalCompositeOperation = "destination-out";
-  ctx.strokeStyle = "#eee"; //触笔的颜色 随便  因为它终究变成透明
-  ctx.lineWidth = 30; //拖动时开始画线的线宽
-  ctx.lineCap = "round" //这两步是把画笔变成圆形
-  //按下，移动，抬起事件
-  can.onmousedown = function(e) {
-    e = e || window.event; //兼容低版本IE浏览器
-    //e.pageX距离文档右边缘； offsetLeft：canvas画布距离文档的右边距离
-    let x = e.pageX - can.offsetLeft; //得到的x是在canvas上的坐标值
-    let y = e.pageY - can.offsetTop;
-    ctx.beginPath();
-    // ctx.moveTo(  x,y )//从哪里开始来画
-    ctx.arc(x, y, 15, 0, 6.3, false); //点第一下是画一个圆
-    ctx.fill();
-    //按下后拖拽
-    can.onmousemove = function(e) { //拖动时一直执行下面
-      e = e || window.event; //兼容低版本IE浏览器
-      ctx.beginPath(); //拖动时开始画线
-      ctx.moveTo(x, y); //起始点   
-      ctx.lineTo(e.pageX - can.offsetLeft, e.pageY - can.offsetTop); //移动的过程
-      //每次移动的时候，样式所在的坐标；
-      x = e.pageX - can.offsetLeft; //第二次渲染刮图片效果的起始点应该在上一次的终止点
-      y = e.pageY - can.offsetTop;
-      ctx.stroke(); //弹出图形并恢复画布
-    }
-    document.onmouseup = function() {
-      //抬起后将事件注销
-      can.onmousemove = null;
-      this.onmouseup = null;
-      check(); //完成后通过像素计算刮过的的百分比
-    }
-  }
-
-  function check() {
-    //获取画布的像素列表
-    let data = ctx.getImageData(0, 0, can.width, can.height).data;
-    let n = 0; //计算透明像素的个数
-    for (let i = 0; i < data.length; i += 4) { //感觉这一步比较消耗性能
-      //RGBA
-      if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0 && data[i + 3] == 0) {
-        n++
-      }
-    }
-    let f = n * 100 / (can.width * can.height); //算出所刮的面积的占比；
-    //刮开面积的比例
-    if (f > 30) { //如果所刮的面积大于30%   则将canvas画布整体清除fillRect
-      ctx.beginPath();
-      ctx.fillRect(0, 0, can.width, can.height)
-    }
-  }
-}
-
-// onload是等所有的资源文件加载完毕以后再绑定事件
-window.onload = function() {
-  // 获取图片列表，即img标签列表
-  var imgs = document.querySelectorAll('.lazy-img');
-  // 获取到浏览器顶部的距离
-  function getTop(e) {
-    return e.offsetTop;
-  }
-
-  // 懒加载实现
-  function lazyload(imgs) {
-    // 可视区域高度
-    var h = window.innerHeight;
-    //滚动区域高度
-    var s = document.documentElement.scrollTop || document.body.scrollTop;
-    for (var i = 0; i < imgs.length; i++) {
-      //图片距离顶部的距离大于可视区域和滚动区域之和时懒加载
-      if ((h + s) > getTop(imgs[i])) {
-        // 真实情况是页面开始有2秒空白，所以使用setTimeout定时2s
-        (function(i) {
-          setTimeout(function() {
-            // 不加立即执行函数i会等于9
-            // 隐形加载图片或其他资源，
-            //创建一个临时图片，这个图片在内存中不会到页面上去。实现隐形加载
-            var temp = new Image();
-            temp.src = imgs[i].getAttribute('data-src'); //只会请求一次
-            // onload判断图片加载完毕，真是图片加载完毕，再赋值给dom节点
-            temp.onload = function() {
-              // 获取自定义属性data-src，用真图片替换假图片
-              imgs[i].src = imgs[i].getAttribute('data-src') 
-              imgs[i].class = "img";
-            }
-          },
-          2000)
-        })(i)
-      }
-    }
-  }
-  lazyload(imgs);
-
-  // 滚屏函数
-  window.onscroll = function() {
-    lazyload(imgs);
-  }
-}

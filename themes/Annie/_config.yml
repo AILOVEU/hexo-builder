@@ -20,13 +20,13 @@ logo: /img/logo.png
 # normal_url: /img/header-bg.jpg
 # random_you_url: https://sariay.github.io/Random-img/
 # random_other_url: https://source.unsplash.com/collection/954550/1920x1080 | https://api.berryapi.net/?service=App.Bing.Images&day=-0
-mask_alpha: 0.4
+mask_alpha: 0.3
 background_image:
     mode: normal
-    normal_url: https://picsum.photos/1920/1080
+    normal_url: https://picsum.photos/1080/720
     random_you_max: 110 
-    random_you_url: https://picsum.photos/1920/1080
-    random_other_url: https://picsum.photos/1920/1080
+    random_you_url: https://picsum.photos/1080/720
+    random_other_url: https://picsum.photos/1080/720
 
 # motto 
 # source: local | hitokoto
@@ -98,15 +98,15 @@ leancloud_count:
         enable: true
     visit_post:
         enable: true
-    topN_post: 
+    topN_post:
         enable: true 
-        limit: 10
+        limit: 7
 
 busuanzi_count:
     enable: false
 
 baidu_analytics:
-    enable: true
+    enable: false
     id: edd020d1de1a782924823ea413e64fc5
 
 cnzz_analytics:
@@ -132,7 +132,7 @@ feed:
     limit: 20
 # post_mathJax
 mathjax:
-  enable: true
+  enable: false
   
 # post_code
 # highlight_theme: normal | night | night blue | night bright | night eighties
@@ -163,7 +163,7 @@ shareThis:
     id: 5c-xxx
 # https://github.com/overtrue/share.js
 socialShare:
-    enable: true
+    enable: false
 
 #########################################################################################################
 # 005-FOOTER
@@ -185,7 +185,7 @@ social:
         icon: <span class="icon-douban "></span>  
 # copyright  
 since: 2019
-author: AILOVEU
+author: Hy
 
 #########################################################################################################
 # 006-GALLERY PAGE

@@ -4012,7 +4012,7 @@
 
   Guestures.prototype.onscroll = function(e) {
     var self = this;
-
+    
     self.isScrolling = true;
 
     document.removeEventListener("scroll", self.onscroll, true);

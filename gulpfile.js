@@ -30,6 +30,7 @@ gulp.task('minify-html', function (done) {
     done();
 });
 
+
 // 压缩js文件
 gulp.task('minify-js', function (done) {
     return gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
@@ -38,40 +39,41 @@ gulp.task('minify-js', function (done) {
             presets: ['es2015'] // es5检查机制
         }))
         .pipe(uglify())
-        .pipe(removeUseStrict()) //取消严格模式方法("use strict")
         .pipe(gulp.dest('./public'));
     done();
 });
 
+
 // 压缩 public/images 目录内图片(Version<3)
-// gulp.task('minify-images', function () {
-//     gulp.src('./public/images/**/*.*')
-//         .pipe(imagemin({
-//             optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
-//             progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片
-//             interlaced: false, //类型：Boolean 默认：false 隔行扫描gif进行渲染
-//             multipass: false, //类型：Boolean 默认：false 多次优化svg直到完全优化
-//         }))
-//         .pipe(gulp.dest('./public/images'));
-// });
+gulp.task('minify-images', function () {
+    gulp.src('./public/img/**/.*')
+        .pipe(imagemin({
+            optimizationLevel: 3, //类型：Number  默认：3  取值范围：0-7（优化等级）
+            progressive: false, //类型：Boolean 默认：false 无损压缩jpg图片
+            interlaced: false, //类型：Boolean 默认：false 隔行扫描gif进行渲染
+            multipass: false, //类型：Boolean 默认：false 多次优化svg直到完全优化
+        }))
+        .pipe(gulp.dest('./public/img'));
+});
 
 // 压缩 public/images 目录内图片(Version>3)
-gulp.task('minify-images', function (done) {
-    gulp.src('./public/images/**/*.*')
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]))
-        .pipe(gulp.dest('./public/images'));
-    done();
-});
+// gulp.task('minify-images', function (done) {
+//     gulp.src('./public/images/**/*.*')
+//         .pipe(imagemin([
+//             imagemin.gifsicle({interlaced: true}),
+//             imagemin.jpegtran({progressive: true}),
+//             imagemin.optipng({optimizationLevel: 5}),
+//             imagemin.svgo({
+//                 plugins: [
+//                     {removeViewBox: true},
+//                     {cleanupIDs: false}
+//                 ]
+//             })
+//         ]))
+//         .pipe(gulp.dest('./public/images'));
+//     done();
+// });
+
 
 //4.0以前的写法 
 //gulp.task('default', [

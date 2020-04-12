@@ -3,12 +3,14 @@ title: 网站更新说明
 tags: 
 - Other
 up: true
-date: 2020/3/24 23:00:00
+date: 2021/1/1 23:00:00
 excerpt: 无
 ---
 网站更新记录：
 |时间|更新内容|文件|
 |:-:|:-:|:-:|
+|2020/4/4|myjs调整自执行函数，防止变量作用域冲突||
+|2020/3/31|使用gulp压缩css、js、html||
 |2020/3/26|统一了妹子图的样式 class="lazy-img" class="lazy-gif"|Annie\source\ .. \custom.styl|
 |2020/3/26|table适配手机宽度|source\css\_base\base.styl - table:width:100%;word-break:break-all;英文换行|
 |2020/3/26|实现pc端的刮刮乐效果，手机端暂不兼容|myjs.js|
@@ -22,7 +24,7 @@ excerpt: 无
 |2020/2/4|更换logo和链接指向||
 |2020/2/3|增加刮刮乐图片能力|参考http://www.fly63.com/article/detial/5788|
 |2020/1/30|更改blockquote样式为#74B1DA|Annie\source\ .. \custom.styl|
-|2020/1/30|添加myblockquote引用样式|Annie\source\ .. \base.styl|
+|2020/1/30|添加myblockquote引用样式|Annie\source\ .. \base.stzyl|
 |2020/1/19|添加mermaid支持||
 |2020/1/19|文章内图片根据data-scr配置打开网页还是浏览图片|Annie\layout\ ..\post\gallery.ejs|
 |2020/1/18|导航页图片添加外边框||
@@ -40,6 +42,8 @@ excerpt: 无
 - 改进刮刮乐手机上体验
 - ~~只在首页展示fixbackground~~
 - 可能会更换图床(现在的太慢了)
-- 解决网速慢的情况下的鬼畜情况
+- ~~解决网速慢的情况下的鬼畜情况~~
 - 名言展示生成截图
-
+- 增加顶置组件
+- gulp压缩图片
+- 增加时间轴样式
