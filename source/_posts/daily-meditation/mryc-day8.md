@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 无
 date: 2020/1/23 18:22:00
-thumbnail: https://s2.ax1x.com/2020/01/28/1KYhex.jpg
-cover: https://s2.ax1x.com/2020/01/28/1KYhex.jpg
+thumbnail: http://cdn.ailoveu.top/img/20200419105900.png
+cover: http://cdn.ailoveu.top/img/20200419105900.png
 ---
 > 每个人在最悲伤的时候，会突然消失一阵子。到底发生了什么，让我告诉你。
 
@@ -17,4 +17,8 @@ cover: https://s2.ax1x.com/2020/01/28/1KYhex.jpg
 
 > 耐心点，你会做到的。
 
-[![1ZmIn1.md.jpg](https://s2.ax1x.com/2020/01/24/1ZmIn1.md.jpg)](https://imgchr.com/i/1ZmIn1)
+  <div align="center">
+
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/20200419105900.png"></p> 
+
+  </div>

@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 你只是遇见TA就已经输了
 date: 2020/1/5 18:22:00
-thumbnail: https://s2.ax1x.com/2020/01/05/lDBo24.md.jpg
-cover: https://s2.ax1x.com/2020/01/05/lDBo24.md.jpg
+thumbnail: http://cdn.ailoveu.top/img/20200419105524.png
+cover: http://cdn.ailoveu.top/img/20200419105524.png
 ---
 > 鱼刺卡过喉咙你却还是喜欢鱼，被狗咬过被猫抓过你却还是热爱动物，满口主要你却还是嗜甜如命。
 
@@ -17,4 +17,8 @@ cover: https://s2.ax1x.com/2020/01/05/lDBo24.md.jpg
 
 > 你喜欢，就甘愿。
 
-![lDD1Zq.jpg](https://s2.ax1x.com/2020/01/05/lDD1Zq.jpg)
+  <div align="center">
+
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/20200419105420.png"></p> 
+
+  </div>

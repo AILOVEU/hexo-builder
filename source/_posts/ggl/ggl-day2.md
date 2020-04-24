@@ -11,11 +11,6 @@ thumbnail: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 cover: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 ---
 
-  <div align="center" style="width:80%;margin:0 auto;">
+http://cdn.ailoveu.top/img/20200419111949.png
 
-![Gpb82D.jpg](https://s1.ax1x.com/2020/03/26/Gpb82D.jpg)
-
-
-  </div>
-
-  <div style="background-image: url(https://s1.ax1x.com/2020/03/26/GpxVFs.jpg)" id= 'img' ></div>
+http://cdn.ailoveu.top/img/20200419111911.png

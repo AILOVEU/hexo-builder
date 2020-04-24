@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 站成永恒，没有悲欢的姿势
 date: 2019/12/29 23:22:00
-thumbnail: https://s2.ax1x.com/2019/12/29/lusPu6.md.jpg
-cover: https://s2.ax1x.com/2019/12/29/lusPu6.md.jpg
+thumbnail: http://cdn.ailoveu.top/img/621dea0f319b2009635670594a872a4.jpg
+cover: http://cdn.ailoveu.top/img/621dea0f319b2009635670594a872a4.jpg
 ---
 >如果有来生，我要做一棵树，站成永恒，没有悲欢的姿势，一半在尘土里安详，一半在风里飞扬；一半洒落荫凉，一半沐浴阳光，非常沉默、非常骄傲。从不依靠、从不寻找。
 
@@ -17,5 +17,6 @@ cover: https://s2.ax1x.com/2019/12/29/lusPu6.md.jpg
 
   <div align="center">
 
-[![lu6o3d.md.jpg](https://s2.ax1x.com/2019/12/29/lu6o3d.md.jpg)](https://imgchr.com/i/lu6o3d)
-</div>
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/621dea0f319b2009635670594a872a4.jpg"></p> 
+
+  </div>

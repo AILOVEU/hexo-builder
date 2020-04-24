@@ -8,8 +8,8 @@ tags:
 up: false
 date: 2019/12/19 01:00:00
 excerpt: 而是你的冷淡告诉我打扰了
-thumbnail: https://s2.ax1x.com/2019/12/20/QXrfsJ.jpg
-cover: https://s2.ax1x.com/2019/12/20/QXrfsJ.jpg
+thumbnail: http://cdn.ailoveu.top/img/20200419104833.png
+cover: http://cdn.ailoveu.top/img/20200419104833.png
 ---
  >不主动不是因为不在乎，
 
@@ -21,4 +21,6 @@ cover: https://s2.ax1x.com/2019/12/20/QXrfsJ.jpg
 
   <div align="center">
 
-![QXrfsJ.jpg](https://s2.ax1x.com/2019/12/20/QXrfsJ.jpg)
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/20200419104833.png"></p> 
+
+  </div>

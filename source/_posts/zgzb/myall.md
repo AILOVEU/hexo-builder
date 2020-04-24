@@ -9,8 +9,8 @@ tags:
 excerpt: 心目中最震撼的演唱会
 up: false
 date: 2020/1/20 21:32:00
-thumbnail: https://s2.ax1x.com/2020/01/20/1ibToj.md.png
-cover: https://s2.ax1x.com/2020/01/20/1ibToj.md.png
+thumbnail: http://cdn.ailoveu.top/img/20200418103154.png
+cover: http://cdn.ailoveu.top/img/20200418103154.png
 ---
 
   <div align="center" style="position: relative;

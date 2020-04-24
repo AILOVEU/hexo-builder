@@ -11,8 +11,8 @@ menu:
     gallery: /gallery
 
 # favicon & logo
-favicon: /img/favicon.ico
-logo: /img/logo.png 
+favicon: http://cdn.ailoveu.top/img/favicon.ico
+logo: http://cdn.ailoveu.top/img/logo.png 
 
 # background_image
 # mask_alpha: 0 ~ 1
@@ -49,8 +49,8 @@ preloader:
 index_style: cart
 
 # index_cart_cover
-cover: https://s1.ax1x.com/2020/03/26/GpHptK.jpg
-lazy_image: https://s1.ax1x.com/2020/03/26/Gp7Bwt.gif
+cover: http://cdn.ailoveu.top/img/GpHptK.jpg
+lazy_image: http://cdn.ailoveu.top/img/Gp7Bwt.gif
 
 #########################################################################################################
 # 004-POST
@@ -58,8 +58,8 @@ lazy_image: https://s1.ax1x.com/2020/03/26/Gp7Bwt.gif
 # post_relate
 relate:
     enable: true
-    posts_limit: 10
-    posts_excerpt: 60
+    posts_limit: 7
+    posts_excerpt: 40
 
 # post_comment
 comment:
@@ -147,7 +147,7 @@ excerpt_link: true
 
 # post_share
 share:
-    enable: true
+    enable: false
 # https://www.addthis.com/
 # 注意浏览器的内容拦截插件
 addThis:
@@ -163,7 +163,7 @@ shareThis:
     id: 5c-xxx
 # https://github.com/overtrue/share.js
 socialShare:
-    enable: false
+    enable: true
 
 #########################################################################################################
 # 005-FOOTER

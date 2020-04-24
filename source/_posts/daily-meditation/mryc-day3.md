@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 我愿意 付出所有来换一个时光机
 date: 2019/12/22 23:22:00
-thumbnail: https://s2.ax1x.com/2019/12/22/QzOxAJ.md.jpg
-cover: https://s2.ax1x.com/2019/12/22/QzOxAJ.md.jpg
+thumbnail: http://cdn.ailoveu.top/img/20200419105109.png
+cover: http://cdn.ailoveu.top/img/20200419105109.png
 ---
 >教授：你怎么想的呢？
 
@@ -23,4 +23,6 @@ cover: https://s2.ax1x.com/2019/12/22/QzOxAJ.md.jpg
 
   <div align="center">
 
-[![QzOxAJ.md.jpg](https://s2.ax1x.com/2019/12/22/QzOxAJ.md.jpg)](https://imgchr.com/i/QzOxAJ)
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/20200419105109.png"></p> 
+
+  </div>

@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 无论是朋友、工作还是恋爱，如果你感到与对方特别契合，沟通愉悦甚至时时令你灵光乍现，你知道这说明什么吗？
 date: 2019/12/21 01:00:00
-thumbnail: https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg
-cover: https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg
+thumbnail: http://cdn.ailoveu.top/img/20200419105006.png
+cover: http://cdn.ailoveu.top/img/20200419105006.png
 ---
 >无论是朋友、工作还是恋爱，如果你感到与对方特别契合，沟通愉悦甚至时时令你灵光乍现，你知道这说明什么吗？
 
@@ -21,4 +21,6 @@ cover: https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg
 
   <div align="center">
 
-[![QxgTXV.md.jpg](https://s2.ax1x.com/2019/12/22/QxgTXV.md.jpg )](https://imgchr.com/i/QxgTXV)
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/20200419105006.png"></p> 
+
+  </div>

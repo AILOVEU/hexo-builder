@@ -8,8 +8,8 @@ tags:
 up: false
 excerpt: 不是所有的事情，都可以用顺气自然解决
 date: 2020/1/1 12:22:00
-thumbnail: https://s2.ax1x.com/2020/01/01/lGAVFU.md.jpg
-cover: https://s2.ax1x.com/2020/01/01/lGAVFU.md.jpg
+thumbnail: http://cdn.ailoveu.top/img/20200419105420.png
+cover: http://cdn.ailoveu.top/img/20200419105420.png
 ---
 > 不是所有的事情，都可以用顺气自然解决。
 
@@ -17,4 +17,8 @@ cover: https://s2.ax1x.com/2020/01/01/lGAVFU.md.jpg
  
 > 想要幸福，你得追逐；想要成功，你得努力。可以停下，但别放弃；可以休息，但别一劳永逸。
 
-[![l8HVPO.md.jpg](https://s2.ax1x.com/2020/01/01/l8HVPO.md.jpg)](https://imgchr.com/i/l8HVPO)
+  <div align="center">
+
+<p><img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/20200419105420.png"></p> 
+
+  </div>
