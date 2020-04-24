@@ -40,7 +40,7 @@ cover: https://s2.ax1x.com/2020/01/26/1mr7Lj.md.jpg
 
 |网站|说明|评级|
 |:-:|:-:|:-:|
-|[wallhaven](https://wallhaven.cc)|使用体验很好，壁纸精良，含nsfw，介意勿打开|★★★★★|
+|[wallhaven](https://wallhaven.cc)|使用体验很好，壁纸精良|★★★★★|
 
 5. 图床
 

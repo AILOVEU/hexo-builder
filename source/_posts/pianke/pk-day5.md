@@ -12,12 +12,12 @@ thumbnail: https://s1.ax1x.com/2020/04/08/GhJnM9.md.jpg
 cover: https://s1.ax1x.com/2020/04/08/GhJnM9.md.jpg
 ---
 
-海阳现场秀新出的节目板块，总觉得有故事的音乐更好听
+总觉得有故事的音乐更好听
 
 <audio controls="controls"  playsinline webkit-playsinline loop  autoplay="autoplay"><br><source src="/pianke/海阳现场秀20200405.mp3" type="audio/mpeg"><br></audio></p><span id="menu_index_1" name="menu_index_1">
 
   <div align="center">
 
-[![lcL9qe.md.jpg](https://s2.ax1x.com/2020/01/07/lcL9qe.md.jpg)](https://imgchr.com/i/lcL9qe)
+<p>    <img class="lazy-img"  data-src="http://cdn.ailoveu.top/img/timg.jpg"></p>
 
   </div>

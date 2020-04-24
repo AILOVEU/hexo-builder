@@ -11,6 +11,7 @@ excerpt: 无
 |:-:|:-:|:-:|
 |2020/4/18|图床开始迁移到七牛，支持10G每月内的免费CDN|picGo、七牛、滴滴云、阿里云域名、域名备案|
 |2020/4/17|完成域名备案，本网站支持访问 http://ailoveu.top 、http://www.ailoveu.top 、https://ailoveu.github.io (永久) ||
+|2020/4/4|使用git hook自动拉取最新版本页面|参考https://www.jianshu.com/p/e88825d88347|
 |2020/4/4|myjs调整自执行函数，防止变量作用域冲突||
 |2020/3/31|使用gulp压缩css、js、html||
 |2020/3/26|统一了妹子图的样式 class="lazy-img" class="lazy-gif"|Annie\source\ .. \custom.styl|

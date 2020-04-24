@@ -10,8 +10,8 @@ tags:
 up: false
 date: 2020/4/12 21:46:00
 excerpt: 我豆瓣里有更好看的电视剧哦
-thumbnail: https://s1.ax1x.com/2020/04/12/GO7uRO.jpg
-cover: https://s1.ax1x.com/2020/04/12/GO7uRO.jpg
+thumbnail: http://cdn.ailoveu.top/img/GO7uRO.jpg
+cover: http://cdn.ailoveu.top/img/GO7uRO.jpg
 ---
 
 给大家推荐些开心的电视剧
