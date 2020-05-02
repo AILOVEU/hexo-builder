@@ -129,92 +129,6 @@ window.requestAnimFrame = (function () {
 
 
 /**
- * 刮刮乐
- */
-(function(){
-
-  const oImgs = document.querySelectorAll('#img')
-  //oImg.readyState 图片加载状态
-  if (oImgs.length > 0) {
-    var oImg = oImgs[0];
-    var temp = new Image();
-    temp.src = oImg.getAttribute('src'); //只会请求一次
-    // onload判断图片加载完毕，真是图片加载完毕，再赋值给dom节点
-    temp.onload = function () {
-      // 获取自定义属性data-src，用真图片替换假图片
-      oImg.src = oImg.getAttribute('data-src');
-      draw(oImg);
-    }
-  }
-  
-  function draw(oImg) { //等图片加载完成后再添加canvas画布在上面
-    let can = document.createElement('canvas'); //创建一个canvas画布
-    can.width = oImg.width; //等于图片的宽高
-    can.height = oImg.height;
-    can.style.position = "absolute"; //canvas画布设置浮动会漂浮在图片上
-    can.style.left = oImg.offsetLeft + "px"; //保存与画布位置一致
-    can.style.top = oImg.offsetTop + "px";
-    //找到图片的父级：parentNode  在oImg子元素前面添加canvas标签：insertBefore
-    oImg.parentNode.insertBefore(can, oImg) //在img前面去插入canvas标签
-    let ctx = can.getContext('2d');
-    ctx.fillStyle = "#bbb"; //刮刮乐的颜色
-    ctx.fillRect(0, 0, oImg.width, oImg.height) //填充宽度
-    //合成:处理合成图片的透明样式；
-    //拖拽的时候，canvas图层显示透明；destination-out：新图形与原图形重叠部分透明
-    ctx.globalCompositeOperation = "destination-out";
-    ctx.strokeStyle = "#eee"; //触笔的颜色 随便  因为它终究变成透明
-    ctx.lineWidth = 30; //拖动时开始画线的线宽
-    ctx.lineCap = "round" //这两步是把画笔变成圆形
-    //按下，移动，抬起事件
-    can.onmousedown = function (e) {
-      e = e || window.event; //兼容低版本IE浏览器
-      //e.pageX距离文档右边缘； offsetLeft：canvas画布距离文档的右边距离
-      let x = e.pageX - can.offsetLeft; //得到的x是在canvas上的坐标值
-      let y = e.pageY - can.offsetTop;
-      ctx.beginPath();
-      // ctx.moveTo(  x,y )//从哪里开始来画
-      ctx.arc(x, y, 15, 0, 6.3, false); //点第一下是画一个圆
-      ctx.fill();
-      //按下后拖拽
-      can.onmousemove = function (e) { //拖动时一直执行下面
-        e = e || window.event; //兼容低版本IE浏览器
-        ctx.beginPath(); //拖动时开始画线
-        ctx.moveTo(x, y); //起始点   
-        ctx.lineTo(e.pageX - can.offsetLeft, e.pageY - can.offsetTop); //移动的过程
-        //每次移动的时候，样式所在的坐标；
-        x = e.pageX - can.offsetLeft; //第二次渲染刮图片效果的起始点应该在上一次的终止点
-        y = e.pageY - can.offsetTop;
-        ctx.stroke(); //弹出图形并恢复画布
-      }
-      document.onmouseup = function () {
-        //抬起后将事件注销
-        can.onmousemove = null;
-        this.onmouseup = null;
-        check(); //完成后通过像素计算刮过的的百分比
-      }
-    }
-  
-    function check() {
-      //获取画布的像素列表
-      let data = ctx.getImageData(0, 0, can.width, can.height).data;
-      let n = 0; //计算透明像素的个数
-      for (let i = 0; i < data.length; i += 4) { //感觉这一步比较消耗性能
-        //RGBA
-        if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0 && data[i + 3] == 0) {
-          n++
-        }
-      }
-      let f = n * 100 / (can.width * can.height); //算出所刮的面积的占比；
-      //刮开面积的比例
-      if (f > 30) { //如果所刮的面积大于30%   则将canvas画布整体清除fillRect
-        ctx.beginPath();
-        ctx.fillRect(0, 0, can.width, can.height)
-      }
-    }
-  }
-})();
-
-/**
  * 懒加载图片
  * 
  */
@@ -285,6 +199,140 @@ window.requestAnimFrame = (function () {
     }
   }
 })();
+/**
+ * 
+ * html2canvas
+ * 稀里糊涂的就实现了？
+ * 
+ */
+$(function () {
+    $(".btn_click_html2cancas").click(function () {
+      html2canvas($(".fixbackground"),{
+        //allowTaint:true,
+        useCORS: true,
+        onrendered: function (canvas) {
+          // var pageData = canvas.toDataURL('image/jpeg', 1.0);
+          // saveFile(pageData.replace("image/jpeg", "image/octet-stream"),new Date().getTime()+".jpeg");
+        }
+      }).then((canvas)=>{
+        var pageData = canvas.toDataURL('image/jpeg', 1.0);
+        saveFile(pageData,new Date().getTime()+".jpeg");
+      });
+
+  });
+  
+});
+/*
+* @param  {String} data     要保存到本地的图片数据
+* @param  {String} filename 文件名
+*/
+var saveFile = function(data, filename){
+  var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
+  save_link.href = data;
+  save_link.download = filename;
+
+  var event = document.createEvent('MouseEvents');
+  
+  event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+  save_link.dispatchEvent(event);
+
+
+ 
+};
+
+
+/**
+ * 介是嘛呀，介是刮刮乐的实现 ! 
+ * 终于做出来了，5555
+ */
+(function() {
+  var imgRefence = document.querySelector('.img-ggl-refence');
+  var refenceUrl = imgRefence.getAttribute('data-src');
+  var refenceImg = new Image();
+  refenceImg.src = refenceUrl;
+  refenceImg.onload = function() {
+    var refenceW = imgRefence.clientWidth;
+    var bodystyle = document.body.style;
+    bodystyle.mozUserSelect = 'none';
+    bodystyle.webkitUserSelect = 'none';
+    var img = new Image();
+    var canvas = document.querySelector('.canvas');
+    canvas.style.backgroundColor = 'transparent';
+    canvas.style.position = 'absolute';
+    
+    img.src = canvas.getAttribute("data-src");
+    canvas.style.backgroundImage = 'url(' + img.src + ')';
+
+    img.addEventListener('load',
+    function(e) {
+        var ctx;
+        var scale = img.width / refenceW;
+        var w = img.width / scale,
+        h = img.height / scale;
+        console.log([w, h]);
+        var offsetX = canvas.offsetLeft,
+        offsetY = canvas.offsetTop;
+        var mouseDown = false;
+  
+        function layer(ctx) {
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, w, h)
+        };
+  
+        function eventDown(e) {
+            e.preventDefault();
+            mouseDown = true;
+        }
+  
+        function eventUp(e) {
+            e.preventDefault();
+            mouseDown = false;
+        }
+  
+        function eventMove(e) {
+            e.preventDefault();
+            if (mouseDown) {
+                // changedTouches 最近一次触发该事件的手指信息
+                if (e.changedTouches) {
+                    e = e.changedTouches[e.changedTouches.length - 1];
+                }
+                var x = (e.clientX + window.pageXOffset) - offsetX || 0;
+                var y = (e.clientY + window.pageYOffset) - offsetY || 0;
+                ctx.beginPath();
+                ctx.arc(x, y,w/5, 0, Math.PI * 2);
+                ctx.fill();
+                // with(ctx) {
+                //     beginPath();
+                //     //fillRect(x,y,30,30)
+                //     arc(x, y,w/5, 0, Math.PI * 2);
+                //     fill();
+                // }
+            }
+        }
+        canvas.width = w;
+        canvas.height = h;
+        var articleContentEle = document.querySelector("#article-content");
+        articleContentEle.style.marginBottom = `${h+20}px`;
+        canvas.style.backgroundImage = 'url(' + img.src + ')';
+        ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'transparent';
+        ctx.fillRect(0, 0, w, h);
+        layer(ctx);
+        ctx.globalCompositeOperation = "destination-out";
+        canvas.addEventListener('touchstart', eventDown);
+        canvas.addEventListener('touchend', eventUp);
+        canvas.addEventListener('touchmove', eventMove);
+        canvas.addEventListener('mousedown', eventDown);
+        canvas.addEventListener('mouseup', eventUp);
+        canvas.addEventListener('mousemove', eventMove);
+    },
+    false)
+  }
+
+  
+})()
+
+
 
 
 /**
@@ -525,3 +573,91 @@ function randomColor() {
   return "rgb(" + randomNum(0, 255) + "," + randomNum(0, 255) + "," + randomNum(0, 255) + ")";
 }
 */
+
+
+
+/**
+ * 刮刮乐
+ */
+// (function(){
+
+//   const oImgs = document.querySelectorAll('#img')
+//   //oImg.readyState 图片加载状态
+//   if (oImgs.length > 0) {
+//     var oImg = oImgs[0];
+//     var temp = new Image();
+//     temp.src = oImg.getAttribute('src'); //只会请求一次
+//     // onload判断图片加载完毕，真是图片加载完毕，再赋值给dom节点
+//     temp.onload = function () {
+//       // 获取自定义属性data-src，用真图片替换假图片
+//       oImg.src = oImg.getAttribute('data-src');
+//       draw(oImg);
+//     }
+//   }
+  
+//   function draw(oImg) { //等图片加载完成后再添加canvas画布在上面
+//     let can = document.createElement('canvas'); //创建一个canvas画布
+//     can.width = oImg.width; //等于图片的宽高
+//     can.height = oImg.height;
+//     can.style.position = "absolute"; //canvas画布设置浮动会漂浮在图片上
+//     can.style.left = oImg.offsetLeft + "px"; //保存与画布位置一致
+//     can.style.top = oImg.offsetTop + "px";
+//     //找到图片的父级：parentNode  在oImg子元素前面添加canvas标签：insertBefore
+//     oImg.parentNode.insertBefore(can, oImg) //在img前面去插入canvas标签
+//     let ctx = can.getContext('2d');
+//     ctx.fillStyle = "#bbb"; //刮刮乐的颜色
+//     ctx.fillRect(0, 0, oImg.width, oImg.height) //填充宽度
+//     //合成:处理合成图片的透明样式；
+//     //拖拽的时候，canvas图层显示透明；destination-out：新图形与原图形重叠部分透明
+//     ctx.globalCompositeOperation = "destination-out";
+//     ctx.strokeStyle = "#eee"; //触笔的颜色 随便  因为它终究变成透明
+//     ctx.lineWidth = 30; //拖动时开始画线的线宽
+//     ctx.lineCap = "round" //这两步是把画笔变成圆形
+//     //按下，移动，抬起事件
+//     can.onmousedown = function (e) {
+//       e = e || window.event; //兼容低版本IE浏览器
+//       //e.pageX距离文档右边缘； offsetLeft：canvas画布距离文档的右边距离
+//       let x = e.pageX - can.offsetLeft; //得到的x是在canvas上的坐标值
+//       let y = e.pageY - can.offsetTop;
+//       ctx.beginPath();
+//       // ctx.moveTo(  x,y )//从哪里开始来画
+//       ctx.arc(x, y, 15, 0, 6.3, false); //点第一下是画一个圆
+//       ctx.fill();
+//       //按下后拖拽
+//       can.onmousemove = function (e) { //拖动时一直执行下面
+//         e = e || window.event; //兼容低版本IE浏览器
+//         ctx.beginPath(); //拖动时开始画线
+//         ctx.moveTo(x, y); //起始点   
+//         ctx.lineTo(e.pageX - can.offsetLeft, e.pageY - can.offsetTop); //移动的过程
+//         //每次移动的时候，样式所在的坐标；
+//         x = e.pageX - can.offsetLeft; //第二次渲染刮图片效果的起始点应该在上一次的终止点
+//         y = e.pageY - can.offsetTop;
+//         ctx.stroke(); //弹出图形并恢复画布
+//       }
+//       document.onmouseup = function () {
+//         //抬起后将事件注销
+//         can.onmousemove = null;
+//         this.onmouseup = null;
+//         check(); //完成后通过像素计算刮过的的百分比
+//       }
+//     }
+  
+//     function check() {
+//       //获取画布的像素列表
+//       let data = ctx.getImageData(0, 0, can.width, can.height).data;
+//       let n = 0; //计算透明像素的个数
+//       for (let i = 0; i < data.length; i += 4) { //感觉这一步比较消耗性能
+//         //RGBA
+//         if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0 && data[i + 3] == 0) {
+//           n++
+//         }
+//       }
+//       let f = n * 100 / (can.width * can.height); //算出所刮的面积的占比；
+//       //刮开面积的比例
+//       if (f > 30) { //如果所刮的面积大于30%   则将canvas画布整体清除fillRect
+//         ctx.beginPath();
+//         ctx.fillRect(0, 0, can.width, can.height)
+//       }
+//     }
+//   }
+// })();

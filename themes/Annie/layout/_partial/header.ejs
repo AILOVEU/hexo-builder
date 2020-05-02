@@ -33,18 +33,26 @@
 <%
 if (is_home()) 
 {%>
-	<header class="fixbackground bg-pan-br">
+	<header class="fixbackground bg-pan-br" crossorigin="anonymous">
 
 		<div class="mask">
-			<div class="h-body">	
+			
+			<div class="h-body">
 				<% if(theme.motto.enable) { %>
 					<div class="motto text-shadow-pop-left">
 						<p class="content" id="motto-content"><%= __('wait_cn') %></p>
-						<p>-<p>
+						
+						<div align="center" class="div_html2cancas">
+							<image class="btn_click_html2cancas" src="/img/html2canvasBtn.png" > 									<!-- 保存图片 -->
+							</image>
+						</div>
 						<p class="author" id="motto-author"><%= __('wait_en') %></p>
+					
 					</div>
+					
 				<% } %>
 			</div>
+			
 			
 			<div class="h-footer">
 				<a href="javascript:;" id="read-more" class="scroll-down">

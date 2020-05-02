@@ -11,6 +11,6 @@ thumbnail: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 cover: https://s2.ax1x.com/2020/02/03/1UF88H.md.jpg
 ---
 
-http://cdn.ailoveu.top/img/20200419111949.png
+<img class="img-ggl-refence" src="http://cdn.ailoveu.top/img/20200419111949.png"  data-src="http://cdn.ailoveu.top/img/20200419111949.png"></img>
 
-http://cdn.ailoveu.top/img/20200419111911.png
+<canvas class="canvas"   data-src="http://cdn.ailoveu.top/img/20200419111911.png" ></canvas>
