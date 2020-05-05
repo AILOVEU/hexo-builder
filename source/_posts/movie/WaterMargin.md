@@ -5,7 +5,7 @@ categories:
 tags: 
 - 水浒传
 - 四大名著
-excerpt: 四大名著影视化作品中最好看的，应该没有人反对吧
+excerpt: 无
 up: false
 date: 2020/2/9 23:32:00
 thumbnail: https://s2.ax1x.com/2020/02/09/1hH0rF.jpg

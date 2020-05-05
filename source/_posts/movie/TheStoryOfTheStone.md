@@ -25,4 +25,4 @@ cover: http://cdn.ailoveu.top/img/20200419110035.png
 [![1UkMyn.md.jpg](http://cdn.ailoveu.top/img/1UkMyn.jpg)](https://imgchr.com/i/1UkMyn)
 
 
-更新中
+等待更新中
