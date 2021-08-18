@@ -1,0 +1,458 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      categories | 幸せの谜
+    
+  </title>
+  <meta name="author" content="Hy">
+  <meta name="keywords" content="博客,空间,分享" />
+  <meta name="description" content="个人博客" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="http://cdn.ailoveu.top/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/index/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/index/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: 'https://picsum.photos/1080/720',
+      randomYouMax: 110,
+      randomYouSrc: 'https://picsum.photos/1080/720',
+	  randomOtherSrc: 'https://picsum.photos/1080/720',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: true,
+	  appId: '6EAKMFXHkl9DUQpOKtVtJMwJ-gzGzoHsz',
+	  appKey: 'fTeVCApFb2zauCWeBcDhyxdy',
+	  serverURLs: 'https://6eakmfxh.lc-cn-n1-shared.com' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/index/atom.xml" title="幸せの谜" type="application/atom+xml">
+</head>
+	<body>
+		<!-- Preloader -->
+
+
+
+
+<!-- header -->
+<!-- <header class="fixbackground bg-pan-br">
+
+	<div class="mask">
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header> -->
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<div align="center">
+		
+			分类
+		
+	</div>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="http://cdn.ailoveu.top/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/index/" class="menu-item-home" target="_self">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/index/archives" class="menu-item-archive" target="_self">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/index/categories" class="menu-item-categories" target="_self">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/index/tags" class="menu-item-tags" target="_self">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/index/about" class="menu-item-about" target="_self">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/index/gallery" class="menu-item-gallery" target="_self">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="https://www.zhihu.com/people/AILOVEUU" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/AILOVEU" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://www.weibo.com/p/1005055306271796" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://www.douban.com/people/AILOVEUU" target="_blank">
+				<span class="icon-douban "></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+<canvas id="universe" width="1365" height="937" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: radial-gradient(100% at 70% 120%, #fff 10%, #fff 100%);z-index: -1;"></canvas>
+
+			
+		<!--main-->
+		<main>
+			<!--content start-->
+<div class="layout-page">	
+	<div class="layout-page-container">
+
+		<div class="layout-page-header">
+
+	
+
+		<i class="fa fa-pencil-square-o">总计 17  分类</i>
+
+	
+	
+</div>
+
+		
+
+			<div class="category">
+				<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/index/categories/IT/">IT</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E4%BD%93%E8%82%B2/">体育</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E5%88%86%E4%BA%AB/">分享</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E5%88%AE%E5%88%AE%E4%B9%90/">刮刮乐</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E5%A6%B9%E5%AD%90%E5%9B%BE/">妹子图</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E5%B7%A5%E5%85%B7/">工具</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E5%BD%B1%E8%A7%86/">影视</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E6%AE%B5%E5%AD%90/">段子</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E6%AF%8F%E6%97%A5%E4%B8%80%E7%A6%85/">每日一禅</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E7%89%87%E5%88%BB/">片刻</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E7%89%87%E5%88%BB/%E6%B5%B7%E9%98%B3%E7%8E%B0%E5%9C%BA%E7%A7%80/">海阳现场秀</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E7%90%86%E8%B4%A2/">理财</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E7%94%B5%E5%BD%B1%E6%88%AA%E5%9B%BE/">电影截图</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E8%81%8C%E5%9C%BA/">职场</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E8%B5%84%E6%BA%90/">资源</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E9%95%87%E9%A6%86%E4%B9%8B%E5%AE%9D/">镇馆之宝</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/index/categories/%E9%9F%B3%E4%B9%90/">音乐</a><span class="category-list-count">1</span></li></ul>
+			</div>
+
+		
+	</div>
+
+	
+		<!-- 
+			ajax 查询相应标签or分类的文章 
+			We can use "Content filtering plugin" to instead ajax!
+		-->
+		<div class="TCP-container">
+			<div id="TCP-title"></div>
+			<div id="TCP-content"></div>
+		</div>
+	
+</div>
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<!-- <div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/index/" class="menu-item-home" target="_self">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/index/archives" class="menu-item-archive" target="_self">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/index/categories" class="menu-item-categories" target="_self">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/index/tags" class="menu-item-tags" target="_self">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/index/about" class="menu-item-about" target="_self">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/index/gallery" class="menu-item-gallery" target="_self">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div> -->
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2019 - 2021, content by Hy. All Rights Reserved.
+			
+			
+				<!-- <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay. -->
+			
+		</p>
+		<p>
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+
+				
+		</p>
+	</div>
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/index/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+	
+<script src="/index/plugin/love/love.js"></script>
+
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+  
+<script src="/index/plugin/leancloud/av-min.js"></script>
+<script src="/index/js/leancloud-count.js"></script>
+<script src="/index/js/myjs.js"></script>
+<script src="/index/js/html2canvas.js"></script>
+<script src="/index/js/canvas-to-blob.min.js"></script>
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var limitCount = 7;
+        if( $('#topN').length ){
+            setTimeout(function() {
+                topNPost(limitCount);
+			}, 3000);
+        }
+    </script>
+   
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/index/plugin/search/ziploader.js"></script>
+<script src="/index/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/index/search.zip',
+		version_Path = '/index/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/index/plugin/chinese/chinese.js"></script>
+<script src="/index/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/index/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/index/plugin/resizediv/resizediv.js"></script>
+<script src="/index/js/main.js"></script>
+
+	</body>	
+</html>
